@@ -1,10 +1,12 @@
 {
-  "name": "diet-planner-dock",
+  "name": "travels",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
     "react-scripts": "1.1.4"
   },
   "scripts": {
