@@ -1,3 +1,6 @@
+$focusColor: #88D5E9;
+$submitColor: #3b5998;
+$inputColor: #BEBEBE;
 
 .modal {
     font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -10,7 +13,7 @@
   
     &__divider {
       border-width: .5px;
-      border-color: #BEBEBE;
+      border-color: $inputColor;
     }
   
     &__form {
@@ -19,17 +22,17 @@
   
       &__input {
         box-sizing: border-box;
-        border: 1px solid #BEBEBE;
+        border: 1px solid $inputColor;
         padding: 7px;
         width: 97%;
         margin: 0;
         outline: none;
   
           &:focus {
-            -moz-box-shadow: 0 0 8px #88D5E9;
-            -webkit-box-shadow: 0 0 8px #88D5E9;
-            box-shadow: 0 0 8px #88D5E9;
-            border: 1px solid #88D5E9;
+            -moz-box-shadow: 0 0 8px $focusColor;
+            -webkit-box-shadow: 0 0 8px $focusColor;
+            box-shadow: 0 0 8px $focusColor;
+            border: 1px solid $focusColor;
           }
       }
   
@@ -55,7 +58,7 @@
         padding-top: 10px;
   
         &__submit {
-          background: #3b5998;
+          background: $submitColor;
           border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: .25rem;
           color: white;
