@@ -1,0 +1,73 @@
+
+.modal {
+    font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  
+    &__header {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    &__divider {
+      border-width: .5px;
+      border-color: #BEBEBE;
+    }
+  
+    &__form {
+      margin: 10px auto;
+      max-width: 400px;
+  
+      &__input {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border: 1px solid #BEBEBE;
+        padding: 7px;
+        width: 97%;
+        margin: 0px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+  
+          &:focus {
+            -moz-box-shadow: 0 0 8px #88D5E9;
+            -webkit-box-shadow: 0 0 8px #88D5E9;
+            box-shadow: 0 0 8px #88D5E9;
+            border: 1px solid #88D5E9;
+          }
+      }
+  
+      &__label {
+        font-size: .6rem;
+        margin:0 0 3px 0;
+        padding: 0;
+        display: block;
+        font-weight: bold;
+  
+        &-required {
+          color: red;
+        }
+      }
+  
+      &__input-small {
+        @extend .modal__form__input;
+        width: 48%;
+      }
+  
+      &__group {
+        text-align: center;
+        padding-top: 10px;
+  
+        &__submit {
+          background: #3b5998;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: .25rem;
+          color: #fff;
+          padding: 6px 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
