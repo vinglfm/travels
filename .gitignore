@@ -8,7 +8,8 @@
 /build
 
 # css build files
-src/App.js
+src/**/*.css
+src/**/*.css.map
 
 # misc
 .DS_Store
