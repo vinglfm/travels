@@ -1,15 +1,19 @@
 import React, {Component} from 'react';
 import SignUpModal from './SignUpModal.js';
+import LogInModal from './LogInModal.js';
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      openSignUpModal: false
+      openSignUpModal: false,
+      openLogInModal: false
     };
 
     this.openSignUpModal = this.openSignUpModal.bind(this);
     this.closeSignUpModal = this.closeSignUpModal.bind(this);
+    this.openLogInModal = this.openLogInModal.bind(this);
+    this.closeLogInModal = this.closeLogInModal.bind(this);
   }
 
   
@@ -21,12 +25,22 @@ export default class Home extends Component {
     this.setState({openSignUpModal: false});
   }
 
+  openLogInModal() {
+    this.setState({openLogInModal: true});
+  }
+
+  closeLogInModal() {
+    this.setState({openLogInModal: false});
+  }
+
   render() {
     return (
       <div>
         <p>Home</p>
         <div className='main__button' onClick={this.openSignUpModal}>Sign up</div>
         <SignUpModal isOpen={this.state.openSignUpModal} close={this.closeSignUpModal}/>
+        <div className='main__button' onClick={this.openLogInModal}>Log In</div>
+        <LogInModal isOpen={this.state.openLogInModal} close={this.closeLogInModal}/>
       </div>
     );
   }
