@@ -33,15 +33,15 @@ const modalStyle = {
           contentLabel='Log in'
           style={modalStyle}
           appElement={document.getElementById('root')}>
-          <div className='modal__header'>Log In</div>
-          <hr className='modal__divider'/>
-          <form className='modal__form' name='LogInForm' onSubmit={this.logIn} role='form'>
-            <label className='modal__form__label'>Email<span className='modal__form__label-required'>*</span></label>
-            <input className='modal__form__input' type='email' ref='email'/>
-            <label className='modal__form__label'>Password<span className='modal__form__label-required'>*</span></label>
-            <input className='modal__form__input' type='password' ref='password' placeholder='Password' minLength='8' maxLength='16'/>
-            <div className='modal__form__group'>
-              <input className='modal__form__group__submit' type='submit' value='Create Account'/>
+          <div className={styles.modal__header}>Log In</div>
+          <hr className={styles.modal__divider}/>
+          <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} role='form'>
+            <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
+            <input className={styles.modal__form__input} type='email' ref='email'/>
+            <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
+            <input className={styles.modal__form__input} type='password' ref='password' placeholder='Password' minLength='8' maxLength='16'/>
+            <div className={styles.modal__form__group}>
+              <input className={styles.modal__form__group__submit} type='submit' value='Create Account'/>
             </div>
           </form>
         </Modal>

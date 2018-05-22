@@ -2,7 +2,16 @@ $focusColor: #88D5E9;
 $submitColor: #3b5998;
 $inputColor: #BEBEBE;
 
-.modal {
+:local(.modal__home) {
+  top: '50%';
+  left: '50%';
+  right: 'auto';
+  bottom: 'auto';
+  margin-right: '-50%';
+  transform: 'translate(-50%, -50%)';
+}
+
+:local .modal {
     font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   
     &__header {
@@ -43,12 +52,12 @@ $inputColor: #BEBEBE;
         display: block;
         font-weight: bold;
   
-        &-required {
+        &__required {
           color: red;
         }
       }
   
-      &__input-small {
+      &__input__small {
         @extend .modal__form__input;
         width: 48%;
       }
