@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Dialog from 'material-ui/Dialog';
-
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Fade from '@material-ui/core/Fade';
   
 export default class SignInModal extends Component {
+
+    transition(props) {
+        return <Fade {...props} />;
+    }
+
     render() {
         return (
             <Dialog
             open={this.props.open}
-            onRequestClose={this.props.handleClose}
-            aria-labelledby='form-dialog-title'>
-            Sign In dialog
+            TransitionComponent={this.transition}
+            keepMounted
+            onClose={this.props.handleClose}>
+            <DialogTitle>Sign In</DialogTitle>
           </Dialog>
         );
     }
