@@ -2,15 +2,6 @@ $focusColor: #88D5E9;
 $submitColor: #3b5998;
 $inputColor: #BEBEBE;
 
-:local(.modal__home) {
-  top: '50%';
-  left: '50%';
-  right: 'auto';
-  bottom: 'auto';
-  margin-right: '-50%';
-  transform: 'translate(-50%, -50%)';
-}
-
 :local .modal {
     font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
-import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
-import FlatButton from 'material-ui/FlatButton';
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import SignInModal from './SignInModal.js';
+import styles from './Header.css';
 
-export default class Header extends Component {
+  export default class Header extends Component {
     constructor(props) {
         super(props);
 
@@ -30,11 +32,15 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div>
-                <AppBar title='Travels'
-                    iconElementLeft={<IconButton></IconButton>}
-                    iconElementRight={<FlatButton label='Sign In' onClick={this.openSignInModal}/>}
-                />
+            <div className={styles.header__root}>
+                <AppBar title='Travels'>
+                    <Toolbar>
+                        <Typography variant='title' color='inherit' className={styles.header__title}>
+                            Travels
+                        </Typography>
+                        <Button color='inherit' onClick={this.openSignInModal}>Sign In</Button>
+                    </Toolbar>
+                </AppBar>
                 <SignInModal open={this.state.open} handleClose={this.closeSignInModal}/>
             </div>
         );
