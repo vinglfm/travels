@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SignUpModal from './SignUpModal.js';
 import LogInModal from './LogInModal.js';
+import Header from '../Header.js';
 
 export default class Home extends Component {
   constructor(props) {
@@ -36,11 +37,13 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <p>Home</p>
-        <div className='main__button' onClick={this.openSignUpModal}>Sign up</div>
-        <SignUpModal isOpen={this.state.openSignUpModal} close={this.closeSignUpModal}/>
-        <div className='main__button' onClick={this.openLogInModal}>Log In</div>
-        <LogInModal isOpen={this.state.openLogInModal} close={this.closeLogInModal}/>
+        <Header/>
+        <div>
+          <div className='main__button' onClick={this.openSignUpModal}>Sign up</div>
+          <SignUpModal isOpen={this.state.openSignUpModal} close={this.closeSignUpModal}/>
+          <div className='main__button' onClick={this.openLogInModal}>Log In</div>
+          <LogInModal isOpen={this.state.openLogInModal} close={this.closeLogInModal}/>
+        </div>
       </div>
     );
   }
