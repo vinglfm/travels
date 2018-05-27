@@ -1,0 +1,151 @@
+$focusColor: #88D5E9;
+$submitColor: #3b5998;
+$inputColor: #BEBEBE;
+
+:local .dialog__title {
+  text-align: center;
+}
+
+:local .fb__button {
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #4c69ba;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #4c69ba;
+    padding: .6rem;
+}
+
+:local .lines {
+    margin: 1rem;
+    line-height: 0.5;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    span {
+        display: inline-block;
+        position: relative;  
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            top: 50%;
+            width: 3rem;
+        }
+
+        &:before {
+            right: 100%;
+            margin-right: 2px;
+        }
+
+        &:after {
+            left: 100%;
+            margin-left: 2px;
+        }
+    }
+  }
+
+:local .log__in {
+    font-style: italic;
+    text-align: center;
+    a {
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+:local .sign__up {
+  font-style: italic;
+  font-size: .5rem;
+
+  a {
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+}
+
+:local .modal {
+    font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  
+    &__back {
+      display: inline-block;
+      text-align: left;
+      cursor: pointer;
+    }
+    
+    &__header {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    &__divider {
+      border-width: .5px;
+      border-color: $inputColor;
+    }
+  
+    &__form {
+      margin: 10px auto;
+      max-width: 400px;
+  
+      &__input {
+        box-sizing: border-box;
+        border: 1px solid $inputColor;
+        padding: 7px;
+        width: 97%;
+        margin: 0;
+        outline: none;
+  
+          &:focus {
+            -moz-box-shadow: 0 0 8px $focusColor;
+            -webkit-box-shadow: 0 0 8px $focusColor;
+            box-shadow: 0 0 8px $focusColor;
+            border: 1px solid $focusColor;
+          }
+      }
+  
+      &__label {
+        font-size: .6rem;
+        margin:0 0 3px 0;
+        padding: 0;
+        display: block;
+        font-weight: bold;
+  
+        &__required {
+          color: red;
+        }
+      }
+  
+      &__input__small {
+        @extend .modal__form__input;
+        width: 48%;
+      }
+  
+      &__group {
+        text-align: center;
+        padding-top: 10px;
+  
+        &__submit {
+          background: $submitColor;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: .25rem;
+          color: white;
+          padding: 6px 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
