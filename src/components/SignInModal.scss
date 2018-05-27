@@ -81,8 +81,7 @@ $inputColor: #BEBEBE;
     font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   
     &__back {
-      display: inline-block;
-      text-align: left;
+      float: left;
       cursor: pointer;
     }
     

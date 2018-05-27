@@ -16,8 +16,8 @@ export default class SignUp extends Component {
 
     render() {
         return (
-            <div>           
-                <div className={styles.modal__header}>
+            <div>                           
+                <div className={styles.modal__header}>                    
                     <a onClick={this.props.baseComponent} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
                     <span>Sign Up</span>
                 </div>
