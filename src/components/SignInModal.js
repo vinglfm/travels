@@ -37,6 +37,8 @@ export default class SignInModal extends Component {
                 <div className={styles.lines}>
                     <span>or</span>
                 </div>
+                <div className={styles.log_in}><a>Log In</a></div>
+                <div className={styles.sign__up}>First time travel? <a>Sign Up</a></div>
             </DialogContent>
           </Dialog>
         );
