@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Fade from '@material-ui/core/Fade';
 import DialogContent from '@material-ui/core/DialogContent';
 import LogIn from './LogIn.js';
 import SignIn from './SignIn.js';
@@ -40,15 +39,6 @@ export default class SignInModal extends Component {
         });
     }
   
-    transition(props) {
-        return <Fade {...props} />;
-    }
-
-    componentWillMount() {
-        console.log('unmount');
-        this.baseComponent();
-    }
-
     getComponent() {
         switch(this.state.component) {
             case 'LogIn':
@@ -64,8 +54,7 @@ export default class SignInModal extends Component {
         return (
             <Dialog
             open={this.props.open}
-            TransitionComponent={this.transition}
-            keepMounted
+            onEnter={this.baseComponent}
             onClose={this.props.handleClose}>
             <DialogTitle>
                 <div className={styles.dialog__title}>Continue with</div>
