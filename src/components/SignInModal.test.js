@@ -3,9 +3,9 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import App from './App';
+import SignInModal from './SignInModal';
 
-it('renders App', () => {
-  const snapshot = shallow(<App />);
+it('renders SignInModal', () => {
+  const snapshot = shallow(<SignInModal open handleClose={()=>{}} />);
   expect(snapshot).toMatchSnapshot();
 });

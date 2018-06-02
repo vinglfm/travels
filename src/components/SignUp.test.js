@@ -3,9 +3,9 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import App from './App';
+import SignUp from './SignUp';
 
-it('renders App', () => {
-  const snapshot = shallow(<App />);
+it('renders SignUp', () => {
+  const snapshot = shallow(<SignUp baseComponent={()=>{}} />);
   expect(snapshot).toMatchSnapshot();
 });
