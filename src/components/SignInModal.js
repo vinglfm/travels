@@ -16,6 +16,7 @@ export default class SignInModal extends Component {
             component: 'SignIn'
         };
 
+        this.getComponent = this.getComponent.bind(this);
         this.logInComponent = this.logInComponent.bind(this);
         this.signUpComponent = this.signUpComponent.bind(this);
         this.baseComponent = this.baseComponent.bind(this);
@@ -46,7 +47,7 @@ export default class SignInModal extends Component {
             case 'SignUp':
                 return <SignUp baseComponent={this.baseComponent}/>;
             default:
-                return <SignIn logInComponent={this.logInComponent} signUpComponent={this.signUpComponent}/>;
+                return <SignIn logInComponent={this.logInComponent} signUpComponent={this.signUpComponent} onSignIn={this.props.handleClose}/>;
         }
     }
 

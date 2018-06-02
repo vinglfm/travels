@@ -31,6 +31,7 @@ ShallowWrapper {
         <WithStyles(DialogContent)>
           <SignIn
                     logInComponent={[Function]}
+                    onSignIn={[Function]}
                     signUpComponent={[Function]}
           />
 </WithStyles(DialogContent)>,
@@ -74,6 +75,7 @@ ShallowWrapper {
         "props": Object {
           "children": <SignIn
             logInComponent={[Function]}
+            onSignIn={[Function]}
             signUpComponent={[Function]}
 />,
         },
@@ -84,6 +86,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "logInComponent": [Function],
+            "onSignIn": [Function],
             "signUpComponent": [Function],
           },
           "ref": null,
@@ -112,6 +115,7 @@ ShallowWrapper {
           <WithStyles(DialogContent)>
             <SignIn
                         logInComponent={[Function]}
+                        onSignIn={[Function]}
                         signUpComponent={[Function]}
             />
 </WithStyles(DialogContent)>,
@@ -155,6 +159,7 @@ ShallowWrapper {
           "props": Object {
             "children": <SignIn
               logInComponent={[Function]}
+              onSignIn={[Function]}
               signUpComponent={[Function]}
 />,
           },
@@ -165,6 +170,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "logInComponent": [Function],
+              "onSignIn": [Function],
               "signUpComponent": [Function],
             },
             "ref": null,
