@@ -52,7 +52,7 @@ export default class LogIn extends Component {
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={styles.modal__form__input} name='email' type='email' ref='email' onChange={this.handleChange}/>
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={styles.modal__form__input} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange} minLength='8' maxLength='16'/>
+                    <input className={styles.modal__form__input} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
                     <input className={styles.modal__form__group__submit} type='submit' disabled={!isEnabled} value='Create Account'/>
                     </div>

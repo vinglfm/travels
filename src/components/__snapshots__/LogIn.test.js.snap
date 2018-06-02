@@ -56,6 +56,8 @@ ShallowWrapper {
           </label>
           <input
                     className={undefined}
+                    name="email"
+                    onChange={[Function]}
                     type="email"
           />
           <label
@@ -70,8 +72,8 @@ ShallowWrapper {
           </label>
           <input
                     className={undefined}
-                    maxLength="16"
-                    minLength="8"
+                    name="password"
+                    onChange={[Function]}
                     placeholder="Password"
                     type="password"
           />
@@ -80,6 +82,7 @@ ShallowWrapper {
           >
                     <input
                               className={undefined}
+                              disabled={true}
                               type="submit"
                               value="Create Account"
                     />
@@ -179,6 +182,8 @@ ShallowWrapper {
 </label>,
             <input
               className={undefined}
+              name="email"
+              onChange={[Function]}
               type="email"
 />,
             <label
@@ -193,8 +198,8 @@ ShallowWrapper {
 </label>,
             <input
               className={undefined}
-              maxLength="16"
-              minLength="8"
+              name="password"
+              onChange={[Function]}
               placeholder="Password"
               type="password"
 />,
@@ -203,6 +208,7 @@ ShallowWrapper {
 >
               <input
                             className={undefined}
+                            disabled={true}
                             type="submit"
                             value="Create Account"
               />
@@ -254,6 +260,8 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": undefined,
+              "name": "email",
+              "onChange": [Function],
               "type": "email",
             },
             "ref": "email",
@@ -299,8 +307,8 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": undefined,
-              "maxLength": "16",
-              "minLength": "8",
+              "name": "password",
+              "onChange": [Function],
               "placeholder": "Password",
               "type": "password",
             },
@@ -315,6 +323,7 @@ ShallowWrapper {
             "props": Object {
               "children": <input
                 className={undefined}
+                disabled={true}
                 type="submit"
                 value="Create Account"
 />,
@@ -327,6 +336,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": undefined,
+                "disabled": true,
                 "type": "submit",
                 "value": "Create Account",
               },
@@ -385,6 +395,8 @@ ShallowWrapper {
             </label>
             <input
                         className={undefined}
+                        name="email"
+                        onChange={[Function]}
                         type="email"
             />
             <label
@@ -399,8 +411,8 @@ ShallowWrapper {
             </label>
             <input
                         className={undefined}
-                        maxLength="16"
-                        minLength="8"
+                        name="password"
+                        onChange={[Function]}
                         placeholder="Password"
                         type="password"
             />
@@ -409,6 +421,7 @@ ShallowWrapper {
             >
                         <input
                                     className={undefined}
+                                    disabled={true}
                                     type="submit"
                                     value="Create Account"
                         />
@@ -508,6 +521,8 @@ ShallowWrapper {
 </label>,
               <input
                 className={undefined}
+                name="email"
+                onChange={[Function]}
                 type="email"
 />,
               <label
@@ -522,8 +537,8 @@ ShallowWrapper {
 </label>,
               <input
                 className={undefined}
-                maxLength="16"
-                minLength="8"
+                name="password"
+                onChange={[Function]}
                 placeholder="Password"
                 type="password"
 />,
@@ -532,6 +547,7 @@ ShallowWrapper {
 >
                 <input
                                 className={undefined}
+                                disabled={true}
                                 type="submit"
                                 value="Create Account"
                 />
@@ -583,6 +599,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": undefined,
+                "name": "email",
+                "onChange": [Function],
                 "type": "email",
               },
               "ref": "email",
@@ -628,8 +646,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": undefined,
-                "maxLength": "16",
-                "minLength": "8",
+                "name": "password",
+                "onChange": [Function],
                 "placeholder": "Password",
                 "type": "password",
               },
@@ -644,6 +662,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <input
                   className={undefined}
+                  disabled={true}
                   type="submit"
                   value="Create Account"
 />,
@@ -656,6 +675,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "className": undefined,
+                  "disabled": true,
                   "type": "submit",
                   "value": "Create Account",
                 },
