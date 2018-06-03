@@ -16,7 +16,7 @@ export default class LogIn extends Component {
 
         this.schema = {
             email: { type: 'email' },
-            password: { type: "string", min: 8, max: 16 }
+            password: { type: 'string', min: 8, max: 16 }
         };
 
         this.logIn = this.logIn.bind(this);
@@ -30,9 +30,7 @@ export default class LogIn extends Component {
     }
 
     handleChange(elem) {
-        let changed = {};
-        changed[elem.target.name] = elem.target.value;
-        this.setState(changed);
+        this.setState({[elem.target.name]: elem.target.value});
     }
 
     canSubmit() {
