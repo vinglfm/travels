@@ -20,7 +20,7 @@ export default class LogIn extends Component {
         };
 
         this.logIn = this.logIn.bind(this);
-        this.canSubmit = this.canSubmit.bind(this);
+        this.validate = this.validate.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -33,12 +33,12 @@ export default class LogIn extends Component {
         this.setState({[elem.target.name]: elem.target.value});
     }
 
-    canSubmit() {
-        return validator.validate(this.state, this.schema) === true;
+    validate() {
+        return validator.validate(this.state, this.schema);
     }
 
     render() {
-        const isEnabled = this.canSubmit();
+        const validation = this.validate();
         return (
             <div>
                 <div className={styles.modal__header}>
@@ -52,7 +52,7 @@ export default class LogIn extends Component {
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={styles.modal__form__input} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
-                    <input className={styles.modal__form__group__submit} type='submit' disabled={!isEnabled} value='Create Account'/>
+                        <input className={styles.modal__form__group__submit} type='submit' disabled={validation !== true} value='Create Account'/>
                     </div>
                 </form>
             </div>
