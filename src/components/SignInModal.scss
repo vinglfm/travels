@@ -1,6 +1,23 @@
 $focusColor: #88D5E9;
 $submitColor: #3b5998;
 $inputColor: #BEBEBE;
+$errorColor: red;
+
+@mixin auth-input($color) {
+  box-sizing: border-box;
+  border: 1px solid $inputColor;
+  padding: 7px;
+  width: 97%;
+  margin: 0;
+  outline: none;
+
+    &:focus {
+      -moz-box-shadow: 0 0 8px $color;
+      -webkit-box-shadow: 0 0 8px;
+      box-shadow: 0 0 8px $color;
+      border: 1px solid $color;
+    }
+}
 
 :local .dialog__title {
   text-align: center;
@@ -101,19 +118,11 @@ $inputColor: #BEBEBE;
       max-width: 400px;
   
       &__input {
-        box-sizing: border-box;
-        border: 1px solid $inputColor;
-        padding: 7px;
-        width: 97%;
-        margin: 0;
-        outline: none;
-  
-          &:focus {
-            -moz-box-shadow: 0 0 8px $focusColor;
-            -webkit-box-shadow: 0 0 8px $focusColor;
-            box-shadow: 0 0 8px $focusColor;
-            border: 1px solid $focusColor;
-          }
+        @include auth-input($focusColor);
+      }
+
+      &__input__error {
+        @include auth-input($errorColor);
       }
   
       &__label {

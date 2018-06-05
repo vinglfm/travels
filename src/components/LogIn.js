@@ -14,13 +14,17 @@ export default class LogIn extends Component {
             password:''
         };
 
-        this.schema = {
-            email: { type: 'email' },
-            password: { type: 'string', min: 8, max: 16 }
+        this.emailValidationSchema = {
+            email: { type: 'email' }
         };
 
+        this.passwordValidationSchema = {
+            password: { type: 'string', min: 8, max: 16 }
+        }
+
         this.logIn = this.logIn.bind(this);
-        this.validate = this.validate.bind(this);
+        this.validateEmail = this.validateEmail.bind(this);
+        this.validatePassword = this.validatePassword.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -33,12 +37,17 @@ export default class LogIn extends Component {
         this.setState({[elem.target.name]: elem.target.value});
     }
 
-    validate() {
-        return validator.validate(this.state, this.schema);
+    validateEmail() {
+        return validator.validate(this.state, this.emailValidationSchema) === true;
+    }
+
+    validatePassword() {
+        return validator.validate(this.state, this.passwordValidationSchema) === true;
     }
 
     render() {
-        const validation = this.validate();
+        const isValidEmail = this.validateEmail();
+        const isValidPassword = this.validatePassword();
         return (
             <div>
                 <div className={styles.modal__header}>
@@ -48,11 +57,11 @@ export default class LogIn extends Component {
                 <hr className={styles.modal__divider}/>
                 <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} role='form'>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={styles.modal__form__input} name='email' type='email' ref='email' onChange={this.handleChange}/>
+                    <input className={isValidEmail ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' ref='email' onChange={this.handleChange}/>
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={styles.modal__form__input} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
+                    <input className={isValidPassword ? styles.modal__form__input : styles.modal__form__input__error} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
-                        <input className={styles.modal__form__group__submit} type='submit' disabled={validation !== true} value='Create Account'/>
+                        <input className={styles.modal__form__group__submit} type='submit' disabled={!isValidEmail || !isValidPassword} value='Create Account'/>
                     </div>
                 </form>
             </div>
