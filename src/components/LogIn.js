@@ -57,9 +57,9 @@ export default class LogIn extends Component {
                 <hr className={styles.modal__divider}/>
                 <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} role='form'>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={isValidEmail ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' ref='email' onChange={this.handleChange}/>
+                    <input className={isValidEmail || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' ref='email' onChange={this.handleChange}/>
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={isValidPassword ? styles.modal__form__input : styles.modal__form__input__error} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
+                    <input className={isValidPassword || !this.state.password ? styles.modal__form__input : styles.modal__form__input__error} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
                         <input className={styles.modal__form__group__submit} type='submit' disabled={!isValidEmail || !isValidPassword} value='Create Account'/>
                     </div>
