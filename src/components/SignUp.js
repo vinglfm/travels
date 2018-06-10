@@ -59,7 +59,7 @@ export default class SignUp extends Component {
                     <span>Sign Up</span>
                 </div>
                 <hr className={styles.modal__divider}/>
-                <form className={styles.modal__form} name='signUpForm' onSubmit={this.signUp} role='form'>
+                <form className={styles.modal__form} name='signUpForm' onSubmit={this.signUp} role='form' noValidate>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={emailValidationError === true || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' placeholder='Email' onChange={this.handleChange}/>
                     <div className={styles.modal__form__error}>
