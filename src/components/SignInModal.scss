@@ -96,7 +96,7 @@ $errorColor: red;
 
 :local .modal {
     font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  
+
     &__back {
       float: left;
       cursor: pointer;
@@ -115,7 +115,8 @@ $errorColor: red;
   
     &__form {
       margin: 10px auto;
-  
+      display: inline-block;
+
       &__input {
         @include auth-input($focusColor);
       }
@@ -132,18 +133,30 @@ $errorColor: red;
         font-weight: bold;
   
         &__required {
-          color: red;
-        }
-
-        &__error {
-          font-size: .4rem;
-          text-align: center;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-          width: 98%;
+          color: $errorColor;
         }
       }
+
+      &__error {
+        position: relative;
+        overflow: hidden;
+        max-width: 95%;
+        min-height: .6rem;
+
+        &__message {
+          position: absolute;
+          font-size: .4rem;
+          color: $errorColor;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &__hidden {
+            display: none;
+          }
+        }
+      }
+      
   
       &__input__small {
         @extend .modal__form__input;

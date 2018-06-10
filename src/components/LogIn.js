@@ -29,8 +29,7 @@ export default class LogIn extends Component {
     }
 
     logIn() {
-        console.log(this.refs.email.value);
-        console.log(this.refs.password.value);
+        console.log(this.state);
     }
 
     handleChange(elem) {
@@ -59,17 +58,11 @@ export default class LogIn extends Component {
                 <hr className={styles.modal__divider}/>
                 <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} role='form'>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={emailValidationError === true || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' ref='email' onChange={this.handleChange}/>
-                    <div className={styles.modal__form__label__error}>
-                        <span>{emailErrorMessage}</span>
-                    </div>
+                    <input className={emailValidationError === true || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' onChange={this.handleChange}/>
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
-                    <input className={passwordValidationError === true || !this.state.password ? styles.modal__form__input : styles.modal__form__input__error} name='password' type='password' ref='password' placeholder='Password' onChange={this.handleChange}/>
-                    <div className={styles.modal__form__label__error}>
-                        <span>{passwordErrorMessage}</span>
-                    </div>
+                    <input className={passwordValidationError === true || !this.state.password ? styles.modal__form__input : styles.modal__form__input__error} name='password' type='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
-                        <input className={styles.modal__form__group__submit} type='submit' disabled={emailValidationError !== true || passwordValidationError !== true} value='Create Account'/>
+                        <input className={styles.modal__form__group__submit} type='submit' value='Create Account'/>
                     </div>
                 </form>
             </div>
