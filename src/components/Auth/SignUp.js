@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Validator from 'fastest-validator';
-import styles from './SignInModal.css';
+import styles from './AuthModal.css';
 
 const validator = new Validator();
 
@@ -32,6 +32,7 @@ export default class SignUp extends Component {
 
     signUp() {
         console.log(this.state);
+        this.props.onSignUp(this.state);
     }
 
     handleChange(elem) {

@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import FacebookLogin from 'react-facebook-login';
 import PropTypes from 'prop-types';
-import styles from './SignInModal.css';
+import styles from './AuthModal.css';
 
 export default class SignIn extends Component {
-
     constructor(props) {
         super(props);
-
         this.facebookResponse = this.facebookResponse.bind(this);
     }
 

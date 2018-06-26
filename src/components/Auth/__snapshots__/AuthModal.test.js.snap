@@ -4,7 +4,7 @@ exports[`renders SignInModal in base state 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignInModal
+  Symbol(enzyme.__unrendered__): <AuthModal
     handleClose={[Function]}
     open={true}
 />,
@@ -197,7 +197,7 @@ exports[`renders SignInModal in logIn state 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignInModal
+  Symbol(enzyme.__unrendered__): <AuthModal
     handleClose={[Function]}
     open={true}
 />,
@@ -224,6 +224,7 @@ ShallowWrapper {
         <WithStyles(DialogContent)>
           <LogIn
                     baseComponent={[Function]}
+                    onLogIn={[Function]}
           />
 </WithStyles(DialogContent)>,
       ],
@@ -266,6 +267,7 @@ ShallowWrapper {
         "props": Object {
           "children": <LogIn
             baseComponent={[Function]}
+            onLogIn={[Function]}
 />,
         },
         "ref": null,
@@ -275,6 +277,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "baseComponent": [Function],
+            "onLogIn": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -302,6 +305,7 @@ ShallowWrapper {
           <WithStyles(DialogContent)>
             <LogIn
                         baseComponent={[Function]}
+                        onLogIn={[Function]}
             />
 </WithStyles(DialogContent)>,
         ],
@@ -344,6 +348,7 @@ ShallowWrapper {
           "props": Object {
             "children": <LogIn
               baseComponent={[Function]}
+              onLogIn={[Function]}
 />,
           },
           "ref": null,
@@ -353,6 +358,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "baseComponent": [Function],
+              "onLogIn": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -378,7 +384,7 @@ exports[`renders SignInModal in signUp state 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignInModal
+  Symbol(enzyme.__unrendered__): <AuthModal
     handleClose={[Function]}
     open={true}
 />,
@@ -405,6 +411,7 @@ ShallowWrapper {
         <WithStyles(DialogContent)>
           <SignUp
                     baseComponent={[Function]}
+                    onSignUp={[Function]}
           />
 </WithStyles(DialogContent)>,
       ],
@@ -447,6 +454,7 @@ ShallowWrapper {
         "props": Object {
           "children": <SignUp
             baseComponent={[Function]}
+            onSignUp={[Function]}
 />,
         },
         "ref": null,
@@ -456,6 +464,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "baseComponent": [Function],
+            "onSignUp": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -483,6 +492,7 @@ ShallowWrapper {
           <WithStyles(DialogContent)>
             <SignUp
                         baseComponent={[Function]}
+                        onSignUp={[Function]}
             />
 </WithStyles(DialogContent)>,
         ],
@@ -525,6 +535,7 @@ ShallowWrapper {
           "props": Object {
             "children": <SignUp
               baseComponent={[Function]}
+              onSignUp={[Function]}
 />,
           },
           "ref": null,
@@ -534,6 +545,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "baseComponent": [Function],
+              "onSignUp": [Function],
             },
             "ref": null,
             "rendered": null,

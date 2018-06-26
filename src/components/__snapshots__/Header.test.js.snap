@@ -35,9 +35,15 @@ ShallowWrapper {
                     >
                               Sign In
                     </WithStyles(Button)>
+                    <WithStyles(Button)
+                              color="inherit"
+                              onClick={[Function]}
+                    >
+                              Log out
+                    </WithStyles(Button)>
           </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
-        <SignInModal
+        <AuthModal
           handleClose={[Function]}
           open={false}
 />,
@@ -65,6 +71,12 @@ ShallowWrapper {
             >
                         Sign In
             </WithStyles(Button)>
+            <WithStyles(Button)
+                        color="inherit"
+                        onClick={[Function]}
+            >
+                        Log out
+            </WithStyles(Button)>
 </WithStyles(Toolbar)>,
           "title": "Travels",
         },
@@ -87,6 +99,12 @@ ShallowWrapper {
                 onClick={[Function]}
 >
                 Sign In
+</WithStyles(Button)>,
+              <WithStyles(Button)
+                color="inherit"
+                onClick={[Function]}
+>
+                Log out
 </WithStyles(Button)>,
             ],
           },
@@ -117,6 +135,19 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Sign In",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Log out",
+                "color": "inherit",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Log out",
               "type": [Function],
             },
           ],
@@ -163,9 +194,15 @@ ShallowWrapper {
                         >
                                     Sign In
                         </WithStyles(Button)>
+                        <WithStyles(Button)
+                                    color="inherit"
+                                    onClick={[Function]}
+                        >
+                                    Log out
+                        </WithStyles(Button)>
             </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
-          <SignInModal
+          <AuthModal
             handleClose={[Function]}
             open={false}
 />,
@@ -193,6 +230,12 @@ ShallowWrapper {
               >
                             Sign In
               </WithStyles(Button)>
+              <WithStyles(Button)
+                            color="inherit"
+                            onClick={[Function]}
+              >
+                            Log out
+              </WithStyles(Button)>
 </WithStyles(Toolbar)>,
             "title": "Travels",
           },
@@ -215,6 +258,12 @@ ShallowWrapper {
                   onClick={[Function]}
 >
                   Sign In
+</WithStyles(Button)>,
+                <WithStyles(Button)
+                  color="inherit"
+                  onClick={[Function]}
+>
+                  Log out
 </WithStyles(Button)>,
               ],
             },
@@ -245,6 +294,19 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Sign In",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Log out",
+                  "color": "inherit",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Log out",
                 "type": [Function],
               },
             ],

@@ -3,31 +3,33 @@ import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import SignInModal from './Auth/SignInModal.js';
+import AuthModal from './Auth/AuthModal';
 import styles from './Header.css';
 
   export default class Header extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            open: false,
+            openAuthModal: false
         };
-
-        this.openSignInModal = this.openSignInModal.bind(this);
-        this.closeSignInModal = this.closeSignInModal.bind(this);
+        this.openAuthModal = this.openAuthModal.bind(this);
+        this.closeAuthModal = this.closeAuthModal.bind(this);
     }
 
-    openSignInModal() {
+    openAuthModal() {
         this.setState({
-            open: true
+            openAuthModal: true
         });
     }
 
-    closeSignInModal() {
+    closeAuthModal() {
         this.setState({
-            open: false
+            openAuthModal: false
         });
+    }
+
+    logOut() {
+        console.log('Log out');
     }
 
     render() {
@@ -38,10 +40,11 @@ import styles from './Header.css';
                         <Typography variant='title' color='inherit' className={styles.header__title}>
                             Travels
                         </Typography>
-                        <Button color='inherit' onClick={this.openSignInModal}>Sign In</Button>
+                        <Button color='inherit' onClick={this.openAuthModal}>Sign In</Button>
+                        <Button color='inherit' onClick={this.logOut}>Log out</Button>
                     </Toolbar>
                 </AppBar>
-                <SignInModal open={this.state.open} handleClose={this.closeSignInModal}/>
+                <AuthModal open={this.state.openAuthModal} handleClose={this.closeAuthModal}/>
             </div>
         );
     }

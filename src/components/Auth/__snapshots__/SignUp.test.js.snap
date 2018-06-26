@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders LogIn 1`] = `
+exports[`renders SignUp 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <LogIn
+  Symbol(enzyme.__unrendered__): <SignUp
     baseComponent={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -32,7 +32,7 @@ ShallowWrapper {
                     />
           </a>
           <span>
-                    Log In
+                    Sign Up
           </span>
 </div>,
         <hr
@@ -40,7 +40,8 @@ ShallowWrapper {
 />,
         <form
           className={undefined}
-          name="LogInForm"
+          name="signUpForm"
+          noValidate={true}
           onSubmit={[Function]}
           role="form"
 >
@@ -58,8 +59,18 @@ ShallowWrapper {
                     className={undefined}
                     name="email"
                     onChange={[Function]}
+                    placeholder="Email"
                     type="email"
           />
+          <div
+                    className={undefined}
+          >
+                    <span
+                              className="undefined undefined"
+                    >
+                              The 'email' field must be a valid e-mail!
+                    </span>
+          </div>
           <label
                     className={undefined}
           >
@@ -76,6 +87,35 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Password"
                     type="password"
+          />
+          <div
+                    className={undefined}
+          >
+                    <span
+                              className="undefined undefined"
+                    >
+                              The 'password' field length must be larger than or equal to 5 characters long!
+                    </span>
+          </div>
+          <label
+                    className={undefined}
+          >
+                    Full Name
+          </label>
+          <input
+                    className={undefined}
+                    name="firstName"
+                    onChange={[Function]}
+                    placeholder="First"
+                    type="text"
+          />
+           
+          <input
+                    className={undefined}
+                    name="lastName"
+                    onChange={[Function]}
+                    placeholder="Last"
+                    type="text"
           />
           <div
                     className={undefined}
@@ -107,7 +147,7 @@ ShallowWrapper {
               />
 </a>,
             <span>
-              Log In
+              Sign Up
 </span>,
           ],
           "className": undefined,
@@ -144,10 +184,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Log In",
+              "children": "Sign Up",
             },
             "ref": null,
-            "rendered": "Log In",
+            "rendered": "Sign Up",
             "type": "span",
           },
         ],
@@ -184,8 +224,18 @@ ShallowWrapper {
               className={undefined}
               name="email"
               onChange={[Function]}
+              placeholder="Email"
               type="email"
 />,
+            <div
+              className={undefined}
+>
+              <span
+                            className="undefined undefined"
+              >
+                            The 'email' field must be a valid e-mail!
+              </span>
+</div>,
             <label
               className={undefined}
 >
@@ -206,6 +256,35 @@ ShallowWrapper {
             <div
               className={undefined}
 >
+              <span
+                            className="undefined undefined"
+              >
+                            The 'password' field length must be larger than or equal to 5 characters long!
+              </span>
+</div>,
+            <label
+              className={undefined}
+>
+              Full Name
+</label>,
+            <input
+              className={undefined}
+              name="firstName"
+              onChange={[Function]}
+              placeholder="First"
+              type="text"
+/>,
+            " ",
+            <input
+              className={undefined}
+              name="lastName"
+              onChange={[Function]}
+              placeholder="Last"
+              type="text"
+/>,
+            <div
+              className={undefined}
+>
               <input
                             className={undefined}
                             disabled={true}
@@ -215,7 +294,8 @@ ShallowWrapper {
 </div>,
           ],
           "className": undefined,
-          "name": "LogInForm",
+          "name": "signUpForm",
+          "noValidate": true,
           "onSubmit": [Function],
           "role": "form",
         },
@@ -262,11 +342,39 @@ ShallowWrapper {
               "className": undefined,
               "name": "email",
               "onChange": [Function],
+              "placeholder": "Email",
               "type": "email",
             },
-            "ref": "email",
+            "ref": null,
             "rendered": null,
             "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="undefined undefined"
+>
+                The 'email' field must be a valid e-mail!
+</span>,
+              "className": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The 'email' field must be a valid e-mail!",
+                "className": "undefined undefined",
+              },
+              "ref": null,
+              "rendered": "The 'email' field must be a valid e-mail!",
+              "type": "span",
+            },
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -312,7 +420,77 @@ ShallowWrapper {
               "placeholder": "Password",
               "type": "password",
             },
-            "ref": "password",
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="undefined undefined"
+>
+                The 'password' field length must be larger than or equal to 5 characters long!
+</span>,
+              "className": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The 'password' field length must be larger than or equal to 5 characters long!",
+                "className": "undefined undefined",
+              },
+              "ref": null,
+              "rendered": "The 'password' field length must be larger than or equal to 5 characters long!",
+              "type": "span",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Full Name",
+              "className": undefined,
+            },
+            "ref": null,
+            "rendered": "Full Name",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": undefined,
+              "name": "firstName",
+              "onChange": [Function],
+              "placeholder": "First",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": undefined,
+              "name": "lastName",
+              "onChange": [Function],
+              "placeholder": "Last",
+              "type": "text",
+            },
+            "ref": null,
             "rendered": null,
             "type": "input",
           },
@@ -371,7 +549,7 @@ ShallowWrapper {
                         />
             </a>
             <span>
-                        Log In
+                        Sign Up
             </span>
 </div>,
           <hr
@@ -379,7 +557,8 @@ ShallowWrapper {
 />,
           <form
             className={undefined}
-            name="LogInForm"
+            name="signUpForm"
+            noValidate={true}
             onSubmit={[Function]}
             role="form"
 >
@@ -397,8 +576,18 @@ ShallowWrapper {
                         className={undefined}
                         name="email"
                         onChange={[Function]}
+                        placeholder="Email"
                         type="email"
             />
+            <div
+                        className={undefined}
+            >
+                        <span
+                                    className="undefined undefined"
+                        >
+                                    The 'email' field must be a valid e-mail!
+                        </span>
+            </div>
             <label
                         className={undefined}
             >
@@ -415,6 +604,35 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="Password"
                         type="password"
+            />
+            <div
+                        className={undefined}
+            >
+                        <span
+                                    className="undefined undefined"
+                        >
+                                    The 'password' field length must be larger than or equal to 5 characters long!
+                        </span>
+            </div>
+            <label
+                        className={undefined}
+            >
+                        Full Name
+            </label>
+            <input
+                        className={undefined}
+                        name="firstName"
+                        onChange={[Function]}
+                        placeholder="First"
+                        type="text"
+            />
+             
+            <input
+                        className={undefined}
+                        name="lastName"
+                        onChange={[Function]}
+                        placeholder="Last"
+                        type="text"
             />
             <div
                         className={undefined}
@@ -446,7 +664,7 @@ ShallowWrapper {
                 />
 </a>,
               <span>
-                Log In
+                Sign Up
 </span>,
             ],
             "className": undefined,
@@ -483,10 +701,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Log In",
+                "children": "Sign Up",
               },
               "ref": null,
-              "rendered": "Log In",
+              "rendered": "Sign Up",
               "type": "span",
             },
           ],
@@ -523,8 +741,18 @@ ShallowWrapper {
                 className={undefined}
                 name="email"
                 onChange={[Function]}
+                placeholder="Email"
                 type="email"
 />,
+              <div
+                className={undefined}
+>
+                <span
+                                className="undefined undefined"
+                >
+                                The 'email' field must be a valid e-mail!
+                </span>
+</div>,
               <label
                 className={undefined}
 >
@@ -545,6 +773,35 @@ ShallowWrapper {
               <div
                 className={undefined}
 >
+                <span
+                                className="undefined undefined"
+                >
+                                The 'password' field length must be larger than or equal to 5 characters long!
+                </span>
+</div>,
+              <label
+                className={undefined}
+>
+                Full Name
+</label>,
+              <input
+                className={undefined}
+                name="firstName"
+                onChange={[Function]}
+                placeholder="First"
+                type="text"
+/>,
+              " ",
+              <input
+                className={undefined}
+                name="lastName"
+                onChange={[Function]}
+                placeholder="Last"
+                type="text"
+/>,
+              <div
+                className={undefined}
+>
                 <input
                                 className={undefined}
                                 disabled={true}
@@ -554,7 +811,8 @@ ShallowWrapper {
 </div>,
             ],
             "className": undefined,
-            "name": "LogInForm",
+            "name": "signUpForm",
+            "noValidate": true,
             "onSubmit": [Function],
             "role": "form",
           },
@@ -601,11 +859,39 @@ ShallowWrapper {
                 "className": undefined,
                 "name": "email",
                 "onChange": [Function],
+                "placeholder": "Email",
                 "type": "email",
               },
-              "ref": "email",
+              "ref": null,
               "rendered": null,
               "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="undefined undefined"
+>
+                  The 'email' field must be a valid e-mail!
+</span>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The 'email' field must be a valid e-mail!",
+                  "className": "undefined undefined",
+                },
+                "ref": null,
+                "rendered": "The 'email' field must be a valid e-mail!",
+                "type": "span",
+              },
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -651,7 +937,77 @@ ShallowWrapper {
                 "placeholder": "Password",
                 "type": "password",
               },
-              "ref": "password",
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="undefined undefined"
+>
+                  The 'password' field length must be larger than or equal to 5 characters long!
+</span>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The 'password' field length must be larger than or equal to 5 characters long!",
+                  "className": "undefined undefined",
+                },
+                "ref": null,
+                "rendered": "The 'password' field length must be larger than or equal to 5 characters long!",
+                "type": "span",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Full Name",
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": "Full Name",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "name": "firstName",
+                "onChange": [Function],
+                "placeholder": "First",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "name": "lastName",
+                "onChange": [Function],
+                "placeholder": "Last",
+                "type": "text",
+              },
+              "ref": null,
               "rendered": null,
               "type": "input",
             },

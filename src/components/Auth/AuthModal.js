@@ -6,10 +6,10 @@ import DialogContent from '@material-ui/core/DialogContent';
 import LogIn from './LogIn.js';
 import SignIn from './SignIn.js';
 import SignUp from './SignUp.js';
-import styles from './SignInModal.css';
+import styles from './AuthModal.css';
 
 
-export default class SignInModal extends Component {
+export default class AuthModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -39,13 +39,21 @@ export default class SignInModal extends Component {
             component: 'SignIn'
         });
     }
+
+    onLogIn() {
+
+    }
+
+    onSignUp() {
+
+    }
   
     getComponent() {
         switch(this.state.component) {
             case 'LogIn':
-                return <LogIn baseComponent={this.baseComponent}/>;
+                return <LogIn baseComponent={this.baseComponent} onLogIn={this.onLogIn}/>;
             case 'SignUp':
-                return <SignUp baseComponent={this.baseComponent}/>;
+                return <SignUp baseComponent={this.baseComponent} onSignUp={this.onSignUp}/>;
             default:
                 return <SignIn logInComponent={this.logInComponent} signUpComponent={this.signUpComponent} onSignIn={this.props.handleClose}/>;
         }
@@ -68,7 +76,7 @@ export default class SignInModal extends Component {
     }
 }
 
-SignInModal.propTypes = {
+AuthModal.propTypes = {
     open: PropTypes.bool.isRequired,
     handleClose: PropTypes.func.isRequired
 };

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import styles from './SignInModal.css';
+import styles from './AuthModal.css';
 
 export default class LogIn extends Component {
     constructor(props) {
@@ -25,6 +25,7 @@ export default class LogIn extends Component {
 
     logIn() {
         console.log(this.state);
+        this.props.onLogIn(this.state);
     }
 
     handleChange(elem) {
