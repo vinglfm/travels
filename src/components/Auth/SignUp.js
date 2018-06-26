@@ -37,7 +37,6 @@ export default class SignUp extends Component {
 
     handleChange(elem) {
         this.setState({[elem.target.name]: elem.target.value});
-        console.log(elem.target.name, '=', elem.target.value);
     }
 
     validateEmail() {
@@ -56,11 +55,11 @@ export default class SignUp extends Component {
         return (
             <div>                           
                 <div className={styles.modal__header}>                    
-                    <a onClick={this.props.baseComponent} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
+                    <a onClick={this.props.onBack} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
                     <span>Sign Up</span>
                 </div>
                 <hr className={styles.modal__divider}/>
-                <form className={styles.modal__form} name='signUpForm' onSubmit={this.signUp} role='form' noValidate>
+                <form className={styles.modal__form} name='signUpForm' onSubmit={this.signUp} noValidate>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={emailValidationError === true || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' placeholder='Email' onChange={this.handleChange}/>
                     <div className={styles.modal__form__error}>
@@ -84,5 +83,5 @@ export default class SignUp extends Component {
 }
 
 SignUp.propTypes = {
-    baseComponent: PropTypes.func.isRequired
+    onBack: PropTypes.func.isRequired
 };

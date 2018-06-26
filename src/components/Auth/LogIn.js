@@ -36,11 +36,11 @@ export default class LogIn extends Component {
         return (
             <div>
                 <div className={styles.modal__header}>
-                    <a onClick={this.props.baseComponent} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
+                    <a onClick={this.props.onBack} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
                     <span>Log In</span>
                 </div>
                 <hr className={styles.modal__divider}/>
-                <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} role='form' noValidate>
+                <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} noValidate>
                     <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={styles.modal__form__input} name='email' type='email' onChange={this.handleChange}/>
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
@@ -55,5 +55,5 @@ export default class LogIn extends Component {
 }
 
 LogIn.propTypes = {
-    baseComponent: PropTypes.func.isRequired
+    onBack: PropTypes.func.isRequired
 };

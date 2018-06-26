@@ -6,6 +6,6 @@ import React from 'react';
 import SignUp from './SignUp';
 
 it('renders SignUp', () => {
-  const snapshot = shallow(<SignUp baseComponent={()=>{}} />);
+  const snapshot = shallow(<SignUp onBack={()=>{}} />);
   expect(snapshot).toMatchSnapshot();
 });

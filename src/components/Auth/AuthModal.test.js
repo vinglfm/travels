@@ -3,23 +3,9 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import SignInModal from './AuthModal';
+import AuthModal from './AuthModal';
 
-it('renders SignInModal in base state', () => {
-  const snapshot = shallow(<SignInModal open handleClose={()=>{}} />);
+it('renders AuthModal', () => {
+  const snapshot = shallow(<AuthModal open handleClose={()=>{}} />);
   expect(snapshot).toMatchSnapshot();
 });
-
-it('renders SignInModal in logIn state', () => {
-    const snapshot = shallow(<SignInModal open handleClose={()=>{}} />);
-    snapshot.instance().logInComponent();
-    snapshot.update();
-    expect(snapshot).toMatchSnapshot();
-  });
-
-  it('renders SignInModal in signUp state', () => {
-    const snapshot = shallow(<SignInModal open handleClose={()=>{}} />);
-    snapshot.instance().signUpComponent();
-    snapshot.update();
-    expect(snapshot).toMatchSnapshot();
-  });

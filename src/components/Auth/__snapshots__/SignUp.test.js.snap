@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SignUp
-    baseComponent={[Function]}
+    onBack={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -43,7 +43,6 @@ ShallowWrapper {
           name="signUpForm"
           noValidate={true}
           onSubmit={[Function]}
-          role="form"
 >
           <label
                     className={undefined}
@@ -297,7 +296,6 @@ ShallowWrapper {
           "name": "signUpForm",
           "noValidate": true,
           "onSubmit": [Function],
-          "role": "form",
         },
         "ref": null,
         "rendered": Array [
@@ -560,7 +558,6 @@ ShallowWrapper {
             name="signUpForm"
             noValidate={true}
             onSubmit={[Function]}
-            role="form"
 >
             <label
                         className={undefined}
@@ -814,7 +811,6 @@ ShallowWrapper {
             "name": "signUpForm",
             "noValidate": true,
             "onSubmit": [Function],
-            "role": "form",
           },
           "ref": null,
           "rendered": Array [

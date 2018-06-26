@@ -6,6 +6,6 @@ import React from 'react';
 import LogIn from './LogIn';
 
 it('renders LogIn', () => {
-  const snapshot = shallow(<LogIn baseComponent={()=>{}} />);
+  const snapshot = shallow(<LogIn onBack={()=>{}} />);
   expect(snapshot).toMatchSnapshot();
 });
