@@ -11,7 +11,9 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-facebook-login": "^4.0.1",
-    "react-modal": "^3.4.4"
+    "react-modal": "^3.4.4",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
