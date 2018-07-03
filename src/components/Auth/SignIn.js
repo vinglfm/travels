@@ -4,8 +4,10 @@ import SignUp from './SignUp.js';
 import LogIn from './LogIn.js';
 import PropTypes from 'prop-types';
 import styles from './AuthModal.css';
+import {connect} from 'react-redux';
+import {logIn} from '../../actions';
 
-export default class SignIn extends Component {
+class SignIn extends Component {
     constructor(props) {
         super(props);
         
@@ -22,6 +24,7 @@ export default class SignIn extends Component {
     facebookResponse (resp) {
         console.log(resp);
         this.props.onSignIn();
+        this.props.logIn(resp);
     }
 
     onLogIn() {
@@ -75,3 +78,9 @@ export default class SignIn extends Component {
 SignIn.propTypes = {
     onSignIn: PropTypes.func.isRequired 
 };
+
+const mapDispatchToProps = {
+    logIn
+};
+
+export default connect(null, mapDispatchToProps)(SignIn);
