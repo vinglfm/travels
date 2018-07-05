@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import AuthModal from './Auth/AuthModal';
+import {logOut} from '../actions';
 import {connect} from 'react-redux';
 import styles from './Header.css';
 
@@ -29,10 +30,6 @@ class Header extends Component {
         });
     }
 
-    logOut() {
-        console.log('Log out');
-    }
-
     render() {
         return (
             <div className={styles.header__root}>
@@ -44,7 +41,7 @@ class Header extends Component {
                         {this.props.requireLogIn ? (
                             <Button color='inherit' onClick={this.openAuthModal}>Sign In</Button>
                         ) : (
-                            <Button color='inherit' onClick={this.logOut}>Log out</Button>
+                            <Button color='inherit' onClick={this.props.logOut}>Log out</Button>
                         )}
                     </Toolbar>
                 </AppBar>
@@ -58,4 +55,8 @@ const mapStateToProps = (state, ownProps) => ({
     requireLogIn: Object.keys(state.user).length === 0 
   });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = {
+    logOut
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
