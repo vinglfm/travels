@@ -27,10 +27,6 @@ class SignIn extends Component {
         this.props.logIn(resp);
     }
 
-    onLogIn() {
-        console.log('Log in');
-    }
-
     onSignUp() {
         console.log('Sign Up');
     }
@@ -60,7 +56,7 @@ class SignIn extends Component {
         console.log(this.state.component);
         switch(this.state.component) {
             case 'LogIn':
-                return <LogIn onBack={() => this.renderComponent('SignIn')} onLogIn={this.onLogIn}/>;
+                return <LogIn onBack={() => this.renderComponent('SignIn')} onClose={() => this.props.onSignIn()}/>;
             case 'SignUp':
                 return <SignUp onBack={() => this.renderComponent('SignIn')} onSignUp={this.onSignUp}/>;
             default:

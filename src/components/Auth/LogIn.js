@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {logIn} from '../../actions';
+import {connect} from 'react-redux';
 import styles from './AuthModal.css';
 
-export default class LogIn extends Component {
+class LogIn extends Component {
     constructor(props) {
         super(props);
 
@@ -23,9 +25,10 @@ export default class LogIn extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    logIn() {
-        console.log(this.state);
-        this.props.onLogIn(this.state);
+    logIn(event) {
+        this.props.logIn(this.state);
+        this.props.onClose();
+        event.preventDefault();
     }
 
     handleChange(elem) {
@@ -46,7 +49,7 @@ export default class LogIn extends Component {
                     <label className={styles.modal__form__label}>Password<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={styles.modal__form__input} name='password' type='password' placeholder='Password' onChange={this.handleChange}/>
                     <div className={styles.modal__form__group}>
-                        <input className={styles.modal__form__group__submit} type='submit' value='Create Account'/>
+                        <input className={styles.modal__form__group__submit} type='submit' value='Log In'/>
                     </div>
                 </form>
             </div>
@@ -55,5 +58,12 @@ export default class LogIn extends Component {
 }
 
 LogIn.propTypes = {
-    onBack: PropTypes.func.isRequired
+    onBack: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired
 };
+
+const mapDispatchToProps = {
+    logIn
+};
+
+export default connect(null, mapDispatchToProps)(LogIn);
