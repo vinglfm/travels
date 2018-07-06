@@ -26,10 +26,6 @@ class SignIn extends Component {
         this.props.onSignIn();
         this.props.logIn(resp);
     }
-
-    onSignUp() {
-        console.log('Sign Up');
-    }
   
     renderComponent(component) {
         this.setState({
@@ -58,7 +54,7 @@ class SignIn extends Component {
             case 'LogIn':
                 return <LogIn onBack={() => this.renderComponent('SignIn')} onClose={() => this.props.onSignIn()}/>;
             case 'SignUp':
-                return <SignUp onBack={() => this.renderComponent('SignIn')} onSignUp={this.onSignUp}/>;
+                return <SignUp onBack={() => this.renderComponent('SignIn')} onClose={() => this.props.onSignIn()}/>;
             default:
                 return this.baseComponent();
         }

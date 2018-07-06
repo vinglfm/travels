@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Validator from 'fastest-validator';
+import {logIn} from '../../actions';
+import {connect} from 'react-redux';
 import styles from './AuthModal.css';
 
 const validator = new Validator();
 
-export default class SignUp extends Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
 
@@ -30,9 +32,10 @@ export default class SignUp extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    signUp() {
-        console.log(this.state);
-        this.props.onSignUp(this.state);
+    signUp(event) {
+        this.props.logIn(this.state);
+        this.props.onClose();
+        event.preventDefault();
     }
 
     handleChange(elem) {
@@ -83,5 +86,12 @@ export default class SignUp extends Component {
 }
 
 SignUp.propTypes = {
-    onBack: PropTypes.func.isRequired
+    onBack: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired
 };
+
+const mapDispatchToProps = {
+    logIn
+};
+
+export default connect(null, mapDispatchToProps)(SignUp);
