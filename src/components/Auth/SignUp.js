@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Validator from 'fastest-validator';
 import {logIn} from '../../actions';
 import {connect} from 'react-redux';
+import Validaton from '../../common/Validation';
 import styles from './AuthModal.css';
-
-const validator = new Validator();
 
 export class SignUp extends Component {
     constructor(props) {
@@ -18,17 +16,8 @@ export class SignUp extends Component {
             lastName: ''
         };
 
-        this.emailValidationSchema = {
-            email: { type: 'email' }
-        };
-
-        this.passwordValidationSchema = {
-            password: { type: 'string', min: 5, max: 12 }
-        }
-
+        this.validation = new Validaton();
         this.signUp = this.signUp.bind(this);
-        this.validateEmail = this.validateEmail.bind(this);
-        this.validatePassword = this.validatePassword.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -42,17 +31,9 @@ export class SignUp extends Component {
         this.setState({[elem.target.name]: elem.target.value});
     }
 
-    validateEmail() {
-        return validator.validate(this.state, this.emailValidationSchema);
-    }
-
-    validatePassword() {
-        return validator.validate(this.state, this.passwordValidationSchema);
-    }
-
     render() {
-        const emailValidationError = this.validateEmail();
-        const passwordValidationError = this.validatePassword();
+        const emailValidationError = this.validation.validateEmail(this.state);
+        const passwordValidationError = this.validation.validatePassword(this.state);
         const emailErrorMessage = emailValidationError[0] ? emailValidationError[0].message: '';
         const passwordErrorMessage = passwordValidationError[0] ? passwordValidationError[0].message: '';
         return (

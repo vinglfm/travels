@@ -147,8 +147,6 @@ $errorColor: red;
           position: absolute;
           font-size: .4rem;
           color: $errorColor;
-          overflow: hidden;
-          text-overflow: ellipsis;
           white-space: nowrap;
 
           &__hidden {
