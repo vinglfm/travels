@@ -3,9 +3,16 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import Header from './Header';
+import {Header} from './Header';
 
-it('renders Header', () => {
-  const snapshot = shallow(<Header />);
-  expect(snapshot).toMatchSnapshot();
+describe('<Header />', () => {
+  let wrapper;
+  
+  beforeEach(() => {
+    wrapper = shallow(<Header />);
+  });
+
+  it('renders LogIn', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });

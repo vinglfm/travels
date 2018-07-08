@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders LogIn 1`] = `
+exports[`<LogIn /> renders LogIn 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LogIn
     onBack={[Function]}
+    onClose={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -83,7 +84,7 @@ ShallowWrapper {
                     <input
                               className={undefined}
                               type="submit"
-                              value="Create Account"
+                              value="Log In"
                     />
           </div>
 </form>,
@@ -208,7 +209,7 @@ ShallowWrapper {
               <input
                             className={undefined}
                             type="submit"
-                            value="Create Account"
+                            value="Log In"
               />
 </div>,
           ],
@@ -322,7 +323,7 @@ ShallowWrapper {
               "children": <input
                 className={undefined}
                 type="submit"
-                value="Create Account"
+                value="Log In"
 />,
               "className": undefined,
             },
@@ -334,7 +335,7 @@ ShallowWrapper {
               "props": Object {
                 "className": undefined,
                 "type": "submit",
-                "value": "Create Account",
+                "value": "Log In",
               },
               "ref": null,
               "rendered": null,
@@ -418,7 +419,7 @@ ShallowWrapper {
                         <input
                                     className={undefined}
                                     type="submit"
-                                    value="Create Account"
+                                    value="Log In"
                         />
             </div>
 </form>,
@@ -543,7 +544,7 @@ ShallowWrapper {
                 <input
                                 className={undefined}
                                 type="submit"
-                                value="Create Account"
+                                value="Log In"
                 />
 </div>,
             ],
@@ -657,7 +658,7 @@ ShallowWrapper {
                 "children": <input
                   className={undefined}
                   type="submit"
-                  value="Create Account"
+                  value="Log In"
 />,
                 "className": undefined,
               },
@@ -669,7 +670,7 @@ ShallowWrapper {
                 "props": Object {
                   "className": undefined,
                   "type": "submit",
-                  "value": "Create Account",
+                  "value": "Log In",
                 },
                 "ref": null,
                 "rendered": null,

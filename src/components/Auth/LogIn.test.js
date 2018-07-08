@@ -3,9 +3,18 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import LogIn from './LogIn';
+import {LogIn} from './LogIn';
 
-it('renders LogIn', () => {
-  const snapshot = shallow(<LogIn onBack={()=>{}} />);
-  expect(snapshot).toMatchSnapshot();
+describe('<LogIn />', () => {
+  let wrapper;
+  let onBack = jest.fn();
+  let onClose = jest.fn();
+  
+  beforeEach(() => {
+    wrapper = shallow(<LogIn onBack={onBack} onClose={onClose}/>);
+  });
+
+  it('renders LogIn', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });

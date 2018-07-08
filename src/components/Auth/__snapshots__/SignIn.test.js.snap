@@ -19,9 +19,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <LogIn
+      "children": <Connect(LogIn)
         onBack={[Function]}
-        onLogIn={[Function]}
+        onClose={[Function]}
 />,
     },
     "ref": null,
@@ -31,7 +31,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "onBack": [Function],
-        "onLogIn": [Function],
+        "onClose": [Function],
       },
       "ref": null,
       "rendered": null,
@@ -45,9 +45,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <LogIn
+        "children": <Connect(LogIn)
           onBack={[Function]}
-          onLogIn={[Function]}
+          onClose={[Function]}
 />,
       },
       "ref": null,
@@ -57,7 +57,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "onBack": [Function],
-          "onLogIn": [Function],
+          "onClose": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -523,9 +523,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <SignUp
+      "children": <Connect(SignUp)
         onBack={[Function]}
-        onSignUp={[Function]}
+        onClose={[Function]}
 />,
     },
     "ref": null,
@@ -535,7 +535,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "onBack": [Function],
-        "onSignUp": [Function],
+        "onClose": [Function],
       },
       "ref": null,
       "rendered": null,
@@ -549,9 +549,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <SignUp
+        "children": <Connect(SignUp)
           onBack={[Function]}
-          onSignUp={[Function]}
+          onClose={[Function]}
 />,
       },
       "ref": null,
@@ -561,7 +561,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "onBack": [Function],
-          "onSignUp": [Function],
+          "onClose": [Function],
         },
         "ref": null,
         "rendered": null,

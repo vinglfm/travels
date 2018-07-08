@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Header 1`] = `
+exports[`<Header /> renders LogIn 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -31,13 +31,7 @@ ShallowWrapper {
                     </WithStyles(Typography)>
                     <WithStyles(Button)
                               color="inherit"
-                              onClick={[Function]}
-                    >
-                              Sign In
-                    </WithStyles(Button)>
-                    <WithStyles(Button)
-                              color="inherit"
-                              onClick={[Function]}
+                              onClick={undefined}
                     >
                               Log out
                     </WithStyles(Button)>
@@ -67,13 +61,7 @@ ShallowWrapper {
             </WithStyles(Typography)>
             <WithStyles(Button)
                         color="inherit"
-                        onClick={[Function]}
-            >
-                        Sign In
-            </WithStyles(Button)>
-            <WithStyles(Button)
-                        color="inherit"
-                        onClick={[Function]}
+                        onClick={undefined}
             >
                         Log out
             </WithStyles(Button)>
@@ -96,13 +84,7 @@ ShallowWrapper {
 </WithStyles(Typography)>,
               <WithStyles(Button)
                 color="inherit"
-                onClick={[Function]}
->
-                Sign In
-</WithStyles(Button)>,
-              <WithStyles(Button)
-                color="inherit"
-                onClick={[Function]}
+                onClick={undefined}
 >
                 Log out
 </WithStyles(Button)>,
@@ -129,22 +111,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Sign In",
-                "color": "inherit",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Sign In",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
                 "children": "Log out",
                 "color": "inherit",
-                "onClick": [Function],
+                "onClick": undefined,
               },
               "ref": null,
               "rendered": "Log out",
@@ -190,13 +159,7 @@ ShallowWrapper {
                         </WithStyles(Typography)>
                         <WithStyles(Button)
                                     color="inherit"
-                                    onClick={[Function]}
-                        >
-                                    Sign In
-                        </WithStyles(Button)>
-                        <WithStyles(Button)
-                                    color="inherit"
-                                    onClick={[Function]}
+                                    onClick={undefined}
                         >
                                     Log out
                         </WithStyles(Button)>
@@ -226,13 +189,7 @@ ShallowWrapper {
               </WithStyles(Typography)>
               <WithStyles(Button)
                             color="inherit"
-                            onClick={[Function]}
-              >
-                            Sign In
-              </WithStyles(Button)>
-              <WithStyles(Button)
-                            color="inherit"
-                            onClick={[Function]}
+                            onClick={undefined}
               >
                             Log out
               </WithStyles(Button)>
@@ -255,13 +212,7 @@ ShallowWrapper {
 </WithStyles(Typography)>,
                 <WithStyles(Button)
                   color="inherit"
-                  onClick={[Function]}
->
-                  Sign In
-</WithStyles(Button)>,
-                <WithStyles(Button)
-                  color="inherit"
-                  onClick={[Function]}
+                  onClick={undefined}
 >
                   Log out
 </WithStyles(Button)>,
@@ -288,22 +239,9 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Sign In",
-                  "color": "inherit",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": "Sign In",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
                   "children": "Log out",
                   "color": "inherit",
-                  "onClick": [Function],
+                  "onClick": undefined,
                 },
                 "ref": null,
                 "rendered": "Log out",

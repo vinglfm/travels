@@ -4,7 +4,7 @@ import {logIn} from '../../actions';
 import {connect} from 'react-redux';
 import styles from './AuthModal.css';
 
-class LogIn extends Component {
+export class LogIn extends Component {
     constructor(props) {
         super(props);
 

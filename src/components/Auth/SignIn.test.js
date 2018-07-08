@@ -3,7 +3,7 @@ import ReactSixteenAdapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new ReactSixteenAdapter() });
 
 import React from 'react';
-import SignIn from './SignIn';
+import {SignIn} from './SignIn';
 
 it('renders SignIn', () => {
   const snapshot = shallow(<SignIn onSignIn={()=>{}} />);
