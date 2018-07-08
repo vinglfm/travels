@@ -11,7 +11,7 @@ export class LogIn extends Component {
 
         this.state = {
             email:'',
-            password:''
+            password:'aev'
         };
 
         this.validation = new Validaton();
@@ -42,7 +42,7 @@ export class LogIn extends Component {
                 </div>
                 <hr className={styles.modal__divider}/>
                 <form className={styles.modal__form} name='LogInForm' onSubmit={this.logIn} noValidate>
-                <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
+                    <label className={styles.modal__form__label}>Email<span className={styles.modal__form__label__required}>*</span></label>
                     <input className={emailError === true || !this.state.email ? styles.modal__form__input : styles.modal__form__input__error} name='email' type='email' placeholder='Email' onChange={this.handleChange}/>
                     <div className={styles.modal__form__error}>
                         <span className={`${styles.modal__form__error__message} ${!this.state.email ? styles.modal__form__error__message__hidden : ''}`}>{emailErrorMessage}</span>

@@ -13,7 +13,9 @@ export default class AuthModal extends Component {
             <Dialog
             open={this.props.open}
             onEnter={this.baseComponent}
-            onClose={this.props.handleClose}>
+            onClose={this.props.handleClose}
+            maxWidth='xs'
+            fullWidth={true}>
             <DialogTitle>
                 <div className={styles.dialog__title}>Continue with</div>
             </DialogTitle>

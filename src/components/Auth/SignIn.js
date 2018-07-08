@@ -35,7 +35,7 @@ export class SignIn extends Component {
 
     baseComponent() {
         return (
-            <div>
+            <div className={styles.sign__in}>
                 <FacebookLogin appId='1817436878556969'
                 autoLoad={false} fields='name,email'
                 cssClass={styles.fb__button} callback={this.facebookResponse}
