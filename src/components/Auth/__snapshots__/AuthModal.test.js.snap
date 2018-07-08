@@ -34,6 +34,8 @@ ShallowWrapper {
           />
 </WithStyles(DialogContent)>,
       ],
+      "fullWidth": true,
+      "maxWidth": "xs",
       "onClose": [Function],
       "onEnter": undefined,
       "open": true,
@@ -112,6 +114,8 @@ ShallowWrapper {
             />
 </WithStyles(DialogContent)>,
         ],
+        "fullWidth": true,
+        "maxWidth": "xs",
         "onClose": [Function],
         "onEnter": undefined,
         "open": true,

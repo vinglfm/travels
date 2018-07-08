@@ -95,7 +95,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div>
+      "children": <div
+        className={undefined}
+>
         <t
                 appId="1817436878556969"
                 autoLoad={false}
@@ -180,6 +182,7 @@ ShallowWrapper {
             </a>
 </div>,
         ],
+        "className": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -297,7 +300,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div>
+        "children": <div
+          className={undefined}
+>
           <t
                     appId="1817436878556969"
                     autoLoad={false}
@@ -382,6 +387,7 @@ ShallowWrapper {
               </a>
 </div>,
           ],
+          "className": undefined,
         },
         "ref": null,
         "rendered": Array [
