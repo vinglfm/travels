@@ -6,26 +6,26 @@ export default {
     signOut
 };
 
-function signIn (userName, password) {
+function signIn (email, password) {
     return fetch(`${config.apiUrl}/users/authenticate/signIn`, 
     {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({userName, password})
+        body: JSON.stringify({email, password})
     })
     .then(handleResponse);
 }
 
-function signUp(userName, password, firstName, lastName) {
+function signUp(email, password, firstName, lastName) {
     return fetch(`${config.apiUrl}/users/authenticate/signUp`, 
     {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({userName, password, firstName, lastName})
+        body: JSON.stringify({email, password, firstName, lastName})
     })
     .then(handleResponse);
 }
