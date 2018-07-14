@@ -22,7 +22,7 @@ export class SignUp extends Component {
     }
 
     signUp(event) {
-        this.props.signIn(this.state);
+        this.props.signUp(this.state);
         this.props.onClose();
         event.preventDefault();
     }
@@ -72,7 +72,7 @@ SignUp.propTypes = {
 };
 
 const mapDispatchToProps = {
-    signIn: actions.signIn
+    signUp: actions.signUp
 };
 
 export default connect(null, mapDispatchToProps)(SignUp);

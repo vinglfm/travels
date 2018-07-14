@@ -13,7 +13,22 @@ const signIn = data => {
             console.log(error);
         });
     };    
-}
+};
+
+const signUp = data => {
+    return dispatch => {
+        userService.signUp(data.email, data.password, data.firstName, data.lastName)
+        .then(user => {
+            dispatch({
+                type: 'SIGN_UP',
+                user
+            });
+        }).catch(error => {
+            //TODO: maybe log out on false attempt
+            console.log(error);
+        });
+    };    
+};
 
 const signOut = () => ({
     type: 'SIGN_OUT'
@@ -21,5 +36,6 @@ const signOut = () => ({
 
 export default {
     signIn,
+    signUp,
     signOut
 };
