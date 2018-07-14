@@ -38,10 +38,10 @@ export class Header extends Component {
                         <Typography variant='title' color='inherit' className={styles.header__title}>
                             Travels
                         </Typography>
-                        {this.props.requireLogIn ? (
+                        {this.props.requireSignIn ? (
                             <Button color='inherit' onClick={this.openAuthModal}>Sign In</Button>
                         ) : (
-                            <Button color='inherit' onClick={this.props.logOut}>Log out</Button>
+                            <Button color='inherit' onClick={this.props.signOut}>Sign Out</Button>
                         )}
                     </Toolbar>
                 </AppBar>
@@ -51,12 +51,12 @@ export class Header extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-    requireLogIn: Object.keys(state.user).length === 0 
+const mapStateToProps = (state) => ({
+    requireSignIn: Object.keys(state.user).length === 0 
   });
 
 const mapDispatchToProps = {
-    logOut: actions.logOut
+    signOut: actions.signOut
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -75,7 +75,7 @@ $errorColor: red;
     }
   }
 
-:local .log__in {
+:local .sign__in {
     font-style: italic;
     text-align: center;
     a {
@@ -96,7 +96,7 @@ $errorColor: red;
   }
 }
 
-:local .sign__in {
+:local .auth {
   text-align: center;
 }
 

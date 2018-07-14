@@ -1,11 +1,11 @@
 import userService from '../_services/userService'
 
-const logIn = data => {
+const signIn = data => {
     return dispatch => {
-        userService.logIn(data.email, data.password)
+        userService.signIn(data.email, data.password)
         .then(user => {
             dispatch({
-                type: 'LOG_IN',
+                type: 'SIGN_IN',
                 user
             });
         }).catch(error => {
@@ -15,11 +15,11 @@ const logIn = data => {
     };    
 }
 
-const logOut = () => ({
-    type: 'LOG_OUT'
+const signOut = () => ({
+    type: 'SIGN_OUT'
 });
 
 export default {
-    logIn,
-    logOut
+    signIn,
+    signOut
 };

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
-import SignIn from './SignIn.js';
+import Auth from './Auth.js';
 import styles from './AuthModal.css';
 
 
@@ -20,7 +20,7 @@ export default class AuthModal extends Component {
                 <div className={styles.dialog__title}>Continue with</div>
             </DialogTitle>
             <DialogContent>
-                <SignIn onSignIn={this.props.handleClose}/>
+                <Auth onSignIn={this.props.handleClose}/>
             </DialogContent>
           </Dialog>
         );

@@ -12,7 +12,7 @@ describe('<Header />', () => {
     wrapper = shallow(<Header />);
   });
 
-  it('renders LogIn', () => {
+  it('renders SignIn', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

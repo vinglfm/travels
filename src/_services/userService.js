@@ -1,13 +1,13 @@
 import config from '../config';
 
 export default {
-    logIn,
     signIn,
-    logOut
+    signUp,
+    signOut
 };
 
-function logIn (username, password) {
-    return fetch(`${config.apiUrl}/users/authenticate`, 
+function signIn (username, password) {
+    return fetch(`${config.apiUrl}/users/authenticate/signIn`, 
     {
         method: 'POST', 
         headers: {
@@ -18,11 +18,19 @@ function logIn (username, password) {
     .then(handleResponse);
 }
 
-function signIn(username, password, firstName, secondName) {
-
+function signUp(username, password, firstName, secondName) {
+    return fetch(`${config.apiUrl}/users/authenticate/signUp`, 
+    {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({username, password})
+    })
+    .then(handleResponse);
 }
 
-function logOut() {
+function signOut() {
 }
 
 function handleResponse(resp) {
