@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Validaton from '../../_common/Validation';
 import {logIn} from '../../_actions';
 import {connect} from 'react-redux';
+import UserService from '../../_services/userService'
 import styles from './AuthModal.css';
 
 export class LogIn extends Component {
@@ -11,12 +12,13 @@ export class LogIn extends Component {
 
         this.state = {
             email:'',
-            password:'aev'
+            password:''
         };
 
         this.validation = new Validaton();
         this.logIn = this.logIn.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        UserService.logIn();
     }
 
     logIn(event) {
