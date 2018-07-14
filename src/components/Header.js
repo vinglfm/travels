@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import AuthModal from './Auth/AuthModal';
-import {logOut} from '../actions';
+import {logOut} from '../_actions';
 import {connect} from 'react-redux';
 import styles from './Header.css';
 

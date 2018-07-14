@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {logIn} from '../../actions';
+import {logIn} from '../../_actions';
 import {connect} from 'react-redux';
-import Validaton from '../../common/Validation';
+import Validaton from '../../_common/Validation';
 import styles from './AuthModal.css';
 
 export class SignUp extends Component {

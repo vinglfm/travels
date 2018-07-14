@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Validaton from '../../common/Validation';
-import {logIn} from '../../actions';
+import Validaton from '../../_common/Validation';
+import {logIn} from '../../_actions';
 import {connect} from 'react-redux';
 import styles from './AuthModal.css';
 

@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free-solid';
 import App from './App';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from './reducers';
+import rootReducer from './_reducers';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(
