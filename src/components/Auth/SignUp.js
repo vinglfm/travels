@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {logIn} from '../../_actions';
+import actions from '../../_actions';
 import {connect} from 'react-redux';
 import Validaton from '../../_common/Validation';
 import styles from './AuthModal.css';
@@ -72,7 +72,7 @@ SignUp.propTypes = {
 };
 
 const mapDispatchToProps = {
-    logIn
+    logIn: actions.logIn
 };
 
 export default connect(null, mapDispatchToProps)(SignUp);

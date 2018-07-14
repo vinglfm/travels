@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import AuthModal from './Auth/AuthModal';
-import {logOut} from '../_actions';
+import actions from '../_actions';
 import {connect} from 'react-redux';
 import styles from './Header.css';
 
@@ -56,7 +56,7 @@ const mapStateToProps = (state, ownProps) => ({
   });
 
 const mapDispatchToProps = {
-    logOut
+    logOut: actions.logOut
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
