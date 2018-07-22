@@ -30,12 +30,29 @@ const signUp = data => {
     };    
 };
 
+const fbSignIn = (data, callback) => {
+    return dispatch => {
+        userService.fbSignIn(data)
+        .then(user => {
+            dispatch({
+                type: 'SIGN_IN',
+                user
+            });
+        }).then(callback)
+        .catch(error => {
+            //TODO: maybe log out on false attempt
+            console.log(error);
+        });
+    };
+}
+
 const signOut = () => ({
     type: 'SIGN_OUT'
 });
 
 export default {
     signIn,
+    fbSignIn,
     signUp,
     signOut
 };

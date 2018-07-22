@@ -23,8 +23,9 @@ export class Auth extends Component {
     }
 
     facebookResponse (resp) {
-        this.props.onSignIn();
-        this.props.signIn(resp);
+        this.props.fbSignIn(resp.accessToken, () => {
+            this.props.onSignIn();
+        });
     }
   
     renderComponent(component) {
@@ -71,7 +72,7 @@ Auth.propTypes = {
 };
 
 const mapDispatchToProps = {
-    signIn: actions.signIn
+    fbSignIn: actions.fbSignIn
 };
 
 export default connect(null, mapDispatchToProps)(Auth);
