@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders LogIn component when state is chagned to LogIn 1`] = `
+exports[`<SignIn /> renders SignIn 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SignIn
-    onSignIn={[Function]}
+    onBack={[Function]}
+    onClose={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,373 +20,115 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Connect(LogIn)
-        onBack={[Function]}
-        onClose={[Function]}
-/>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "onBack": [Function],
-        "onClose": [Function],
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <Connect(LogIn)
-          onBack={[Function]}
-          onClose={[Function]}
-/>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "onBack": [Function],
-          "onClose": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`renders SignIn 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignIn
-    onSignIn={[Function]}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <div
-        className={undefined}
->
-        <t
-                appId="1817436878556969"
-                autoLoad={false}
-                callback={[Function]}
-                cssClass="kep-login-facebook"
-                fields="name,email"
-                size="metro"
-                tag="button"
-                textButton="Facebook"
-                typeButton="button"
-        />
+      "children": Array [
         <div
-                className={undefined}
-        >
-                <span>
-                        or
-                </span>
-        </div>
-        <div
-                className={undefined}
-        >
-                <a
-                        onClick={[Function]}
-                >
-                        Log In
-                </a>
-        </div>
-        <div
-                className={undefined}
-        >
-                First time travel? 
-                <a
-                        onClick={[Function]}
-                >
-                        Sign Up
-                </a>
-        </div>
-</div>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <t
-            appId="1817436878556969"
-            autoLoad={false}
-            callback={[Function]}
-            cssClass="kep-login-facebook"
-            fields="name,email"
-            size="metro"
-            tag="button"
-            textButton="Facebook"
-            typeButton="button"
-/>,
-          <div
-            className={undefined}
->
-            <span>
-                        or
-            </span>
-</div>,
-          <div
-            className={undefined}
->
-            <a
-                        onClick={[Function]}
-            >
-                        Log In
-            </a>
-</div>,
-          <div
-            className={undefined}
->
-            First time travel? 
-            <a
-                        onClick={[Function]}
-            >
-                        Sign Up
-            </a>
-</div>,
-        ],
-        "className": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "appId": "1817436878556969",
-            "autoLoad": false,
-            "callback": [Function],
-            "cssClass": "kep-login-facebook",
-            "fields": "name,email",
-            "size": "metro",
-            "tag": "button",
-            "textButton": "Facebook",
-            "typeButton": "button",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <span>
-              or
-</span>,
-            "className": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "or",
-            },
-            "ref": null,
-            "rendered": "or",
-            "type": "span",
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <a
-              onClick={[Function]}
->
-              Log In
-</a>,
-            "className": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Log In",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Log In",
-            "type": "a",
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "First time travel? ",
-              <a
-                onClick={[Function]}
->
-                Sign Up
-</a>,
-            ],
-            "className": undefined,
-          },
-          "ref": null,
-          "rendered": Array [
-            "First time travel? ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Sign Up",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Sign Up",
-              "type": "a",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
           className={undefined}
 >
-          <t
-                    appId="1817436878556969"
-                    autoLoad={false}
-                    callback={[Function]}
-                    cssClass="kep-login-facebook"
-                    fields="name,email"
-                    size="metro"
-                    tag="button"
-                    textButton="Facebook"
-                    typeButton="button"
+          <a
+                    className={undefined}
+                    onClick={[Function]}
+          >
+                    <i
+                              className="fas fa-arrow-left"
+                    />
+          </a>
+          <span>
+                    Sign In
+          </span>
+</div>,
+        <hr
+          className={undefined}
+/>,
+        <form
+          className={undefined}
+          name="SignInForm"
+          noValidate={true}
+          onSubmit={[Function]}
+>
+          <label
+                    className={undefined}
+          >
+                    Email
+                    <span
+                              className={undefined}
+                    >
+                              *
+                    </span>
+          </label>
+          <input
+                    className={undefined}
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
           />
           <div
                     className={undefined}
           >
-                    <span>
-                              or
+                    <span
+                              className="undefined undefined"
+                    >
+                              The 'email' field must be a valid e-mail!
+                    </span>
+          </div>
+          <label
+                    className={undefined}
+          >
+                    Password
+                    <span
+                              className={undefined}
+                    >
+                              *
+                    </span>
+          </label>
+          <input
+                    className={undefined}
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="password"
+          />
+          <div
+                    className={undefined}
+          >
+                    <span
+                              className="undefined undefined"
+                    >
+                              The 'password' field length must be larger than or equal to 5 characters long!
                     </span>
           </div>
           <div
                     className={undefined}
           >
-                    <a
-                              onClick={[Function]}
-                    >
-                              Log In
-                    </a>
+                    <input
+                              className={undefined}
+                              disabled={true}
+                              type="submit"
+                              value="Sign In"
+                    />
           </div>
-          <div
-                    className={undefined}
-          >
-                    First time travel? 
-                    <a
-                              onClick={[Function]}
-                    >
-                              Sign Up
-                    </a>
-          </div>
-</div>,
-      },
-      "ref": null,
-      "rendered": Object {
+</form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <t
-              appId="1817436878556969"
-              autoLoad={false}
-              callback={[Function]}
-              cssClass="kep-login-facebook"
-              fields="name,email"
-              size="metro"
-              tag="button"
-              textButton="Facebook"
-              typeButton="button"
-/>,
-            <div
+            <a
               className={undefined}
+              onClick={[Function]}
 >
-              <span>
-                            or
-              </span>
-</div>,
-            <div
-              className={undefined}
->
-              <a
-                            onClick={[Function]}
-              >
-                            Log In
-              </a>
-</div>,
-            <div
-              className={undefined}
->
-              First time travel? 
-              <a
-                            onClick={[Function]}
-              >
-                            Sign Up
-              </a>
-</div>,
+              <i
+                            className="fas fa-arrow-left"
+              />
+</a>,
+            <span>
+              Sign In
+</span>,
           ],
           "className": undefined,
         },
@@ -394,29 +137,186 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "appId": "1817436878556969",
-              "autoLoad": false,
-              "callback": [Function],
-              "cssClass": "kep-login-facebook",
-              "fields": "name,email",
-              "size": "metro",
-              "tag": "button",
-              "textButton": "Facebook",
-              "typeButton": "button",
+              "children": <i
+                className="fas fa-arrow-left"
+/>,
+              "className": undefined,
+              "onClick": [Function],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-arrow-left",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            "type": "a",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <span>
-                or
+              "children": "Sign In",
+            },
+            "ref": null,
+            "rendered": "Sign In",
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className={undefined}
+>
+              Email
+              <span
+                            className={undefined}
+              >
+                            *
+              </span>
+</label>,
+            <input
+              className={undefined}
+              name="email"
+              onChange={[Function]}
+              placeholder="Email"
+              type="email"
+/>,
+            <div
+              className={undefined}
+>
+              <span
+                            className="undefined undefined"
+              >
+                            The 'email' field must be a valid e-mail!
+              </span>
+</div>,
+            <label
+              className={undefined}
+>
+              Password
+              <span
+                            className={undefined}
+              >
+                            *
+              </span>
+</label>,
+            <input
+              className={undefined}
+              name="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+/>,
+            <div
+              className={undefined}
+>
+              <span
+                            className="undefined undefined"
+              >
+                            The 'password' field length must be larger than or equal to 5 characters long!
+              </span>
+</div>,
+            <div
+              className={undefined}
+>
+              <input
+                            className={undefined}
+                            disabled={true}
+                            type="submit"
+                            value="Sign In"
+              />
+</div>,
+          ],
+          "className": undefined,
+          "name": "SignInForm",
+          "noValidate": true,
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Email",
+                <span
+                  className={undefined}
+>
+                  *
+</span>,
+              ],
+              "className": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Email",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "*",
+                  "className": undefined,
+                },
+                "ref": null,
+                "rendered": "*",
+                "type": "span",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": undefined,
+              "name": "email",
+              "onChange": [Function],
+              "placeholder": "Email",
+              "type": "email",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="undefined undefined"
+>
+                The 'email' field must be a valid e-mail!
 </span>,
               "className": undefined,
             },
@@ -426,10 +326,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "or",
+                "children": "The 'email' field must be a valid e-mail!",
+                "className": "undefined undefined",
               },
               "ref": null,
-              "rendered": "or",
+              "rendered": "The 'email' field must be a valid e-mail!",
               "type": "span",
             },
             "type": "div",
@@ -439,11 +340,59 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                onClick={[Function]}
+              "children": Array [
+                "Password",
+                <span
+                  className={undefined}
 >
-                Log In
-</a>,
+                  *
+</span>,
+              ],
+              "className": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Password",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "*",
+                  "className": undefined,
+                },
+                "ref": null,
+                "rendered": "*",
+                "type": "span",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": undefined,
+              "name": "password",
+              "onChange": [Function],
+              "placeholder": "Password",
+              "type": "password",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="undefined undefined"
+>
+                The 'password' field length must be larger than or equal to 5 characters long!
+</span>,
               "className": undefined,
             },
             "ref": null,
@@ -452,12 +401,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Log In",
-                "onClick": [Function],
+                "children": "The 'password' field length must be larger than or equal to 5 characters long!",
+                "className": "undefined undefined",
               },
               "ref": null,
-              "rendered": "Log In",
-              "type": "a",
+              "rendered": "The 'password' field length must be larger than or equal to 5 characters long!",
+              "type": "span",
             },
             "type": "div",
           },
@@ -466,87 +415,35 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                "First time travel? ",
-                <a
-                  onClick={[Function]}
->
-                  Sign Up
-</a>,
-              ],
+              "children": <input
+                className={undefined}
+                disabled={true}
+                type="submit"
+                value="Sign In"
+/>,
               "className": undefined,
             },
             "ref": null,
-            "rendered": Array [
-              "First time travel? ",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Sign Up",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": "Sign Up",
-                "type": "a",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "disabled": true,
+                "type": "submit",
+                "value": "Sign In",
               },
-            ],
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
             "type": "div",
           },
         ],
-        "type": "div",
+        "type": "form",
       },
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`renders SignUp component when state is changed to SignUp 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignIn
-    onSignIn={[Function]}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <Connect(SignUp)
-        onBack={[Function]}
-        onClose={[Function]}
-/>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "onBack": [Function],
-        "onClose": [Function],
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -555,24 +452,430 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Connect(SignUp)
-          onBack={[Function]}
-          onClose={[Function]}
+        "children": Array [
+          <div
+            className={undefined}
+>
+            <a
+                        className={undefined}
+                        onClick={[Function]}
+            >
+                        <i
+                                    className="fas fa-arrow-left"
+                        />
+            </a>
+            <span>
+                        Sign In
+            </span>
+</div>,
+          <hr
+            className={undefined}
 />,
+          <form
+            className={undefined}
+            name="SignInForm"
+            noValidate={true}
+            onSubmit={[Function]}
+>
+            <label
+                        className={undefined}
+            >
+                        Email
+                        <span
+                                    className={undefined}
+                        >
+                                    *
+                        </span>
+            </label>
+            <input
+                        className={undefined}
+                        name="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="email"
+            />
+            <div
+                        className={undefined}
+            >
+                        <span
+                                    className="undefined undefined"
+                        >
+                                    The 'email' field must be a valid e-mail!
+                        </span>
+            </div>
+            <label
+                        className={undefined}
+            >
+                        Password
+                        <span
+                                    className={undefined}
+                        >
+                                    *
+                        </span>
+            </label>
+            <input
+                        className={undefined}
+                        name="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="password"
+            />
+            <div
+                        className={undefined}
+            >
+                        <span
+                                    className="undefined undefined"
+                        >
+                                    The 'password' field length must be larger than or equal to 5 characters long!
+                        </span>
+            </div>
+            <div
+                        className={undefined}
+            >
+                        <input
+                                    className={undefined}
+                                    disabled={true}
+                                    type="submit"
+                                    value="Sign In"
+                        />
+            </div>
+</form>,
+        ],
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "onBack": [Function],
-          "onClose": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className={undefined}
+                onClick={[Function]}
+>
+                <i
+                                className="fas fa-arrow-left"
+                />
+</a>,
+              <span>
+                Sign In
+</span>,
+            ],
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-arrow-left"
+/>,
+                "className": undefined,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-arrow-left",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign In",
+              },
+              "ref": null,
+              "rendered": "Sign In",
+              "type": "span",
+            },
+          ],
+          "type": "div",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className={undefined}
+>
+                Email
+                <span
+                                className={undefined}
+                >
+                                *
+                </span>
+</label>,
+              <input
+                className={undefined}
+                name="email"
+                onChange={[Function]}
+                placeholder="Email"
+                type="email"
+/>,
+              <div
+                className={undefined}
+>
+                <span
+                                className="undefined undefined"
+                >
+                                The 'email' field must be a valid e-mail!
+                </span>
+</div>,
+              <label
+                className={undefined}
+>
+                Password
+                <span
+                                className={undefined}
+                >
+                                *
+                </span>
+</label>,
+              <input
+                className={undefined}
+                name="password"
+                onChange={[Function]}
+                placeholder="Password"
+                type="password"
+/>,
+              <div
+                className={undefined}
+>
+                <span
+                                className="undefined undefined"
+                >
+                                The 'password' field length must be larger than or equal to 5 characters long!
+                </span>
+</div>,
+              <div
+                className={undefined}
+>
+                <input
+                                className={undefined}
+                                disabled={true}
+                                type="submit"
+                                value="Sign In"
+                />
+</div>,
+            ],
+            "className": undefined,
+            "name": "SignInForm",
+            "noValidate": true,
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Email",
+                  <span
+                    className={undefined}
+>
+                    *
+</span>,
+                ],
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Email",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "*",
+                    "className": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "*",
+                  "type": "span",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "name": "email",
+                "onChange": [Function],
+                "placeholder": "Email",
+                "type": "email",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="undefined undefined"
+>
+                  The 'email' field must be a valid e-mail!
+</span>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The 'email' field must be a valid e-mail!",
+                  "className": "undefined undefined",
+                },
+                "ref": null,
+                "rendered": "The 'email' field must be a valid e-mail!",
+                "type": "span",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Password",
+                  <span
+                    className={undefined}
+>
+                    *
+</span>,
+                ],
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Password",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "*",
+                    "className": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "*",
+                  "type": "span",
+                },
+              ],
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": undefined,
+                "name": "password",
+                "onChange": [Function],
+                "placeholder": "Password",
+                "type": "password",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="undefined undefined"
+>
+                  The 'password' field length must be larger than or equal to 5 characters long!
+</span>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The 'password' field length must be larger than or equal to 5 characters long!",
+                  "className": "undefined undefined",
+                },
+                "ref": null,
+                "rendered": "The 'password' field length must be larger than or equal to 5 characters long!",
+                "type": "span",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <input
+                  className={undefined}
+                  disabled={true}
+                  type="submit"
+                  value="Sign In"
+/>,
+                "className": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": undefined,
+                  "disabled": true,
+                  "type": "submit",
+                  "value": "Sign In",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+      ],
       "type": "div",
     },
   ],

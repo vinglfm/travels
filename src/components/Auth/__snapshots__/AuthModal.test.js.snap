@@ -29,7 +29,7 @@ ShallowWrapper {
           </div>
 </WithStyles(DialogTitle)>,
         <WithStyles(DialogContent)>
-          <Connect(SignIn)
+          <Connect(Auth)
                     onSignIn={[Function]}
           />
 </WithStyles(DialogContent)>,
@@ -73,7 +73,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Connect(SignIn)
+          "children": <Connect(Auth)
             onSignIn={[Function]}
 />,
         },
@@ -109,7 +109,7 @@ ShallowWrapper {
             </div>
 </WithStyles(DialogTitle)>,
           <WithStyles(DialogContent)>
-            <Connect(SignIn)
+            <Connect(Auth)
                         onSignIn={[Function]}
             />
 </WithStyles(DialogContent)>,
@@ -153,7 +153,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Connect(SignIn)
+            "children": <Connect(Auth)
               onSignIn={[Function]}
 />,
           },

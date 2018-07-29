@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> renders LogIn 1`] = `
+exports[`<Header /> renders SignIn 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -33,7 +33,7 @@ ShallowWrapper {
                               color="inherit"
                               onClick={undefined}
                     >
-                              Log out
+                              Sign Out
                     </WithStyles(Button)>
           </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
@@ -63,7 +63,7 @@ ShallowWrapper {
                         color="inherit"
                         onClick={undefined}
             >
-                        Log out
+                        Sign Out
             </WithStyles(Button)>
 </WithStyles(Toolbar)>,
           "title": "Travels",
@@ -86,7 +86,7 @@ ShallowWrapper {
                 color="inherit"
                 onClick={undefined}
 >
-                Log out
+                Sign Out
 </WithStyles(Button)>,
             ],
           },
@@ -111,12 +111,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Log out",
+                "children": "Sign Out",
                 "color": "inherit",
                 "onClick": undefined,
               },
               "ref": null,
-              "rendered": "Log out",
+              "rendered": "Sign Out",
               "type": [Function],
             },
           ],
@@ -161,7 +161,7 @@ ShallowWrapper {
                                     color="inherit"
                                     onClick={undefined}
                         >
-                                    Log out
+                                    Sign Out
                         </WithStyles(Button)>
             </WithStyles(Toolbar)>
 </WithStyles(AppBar)>,
@@ -191,7 +191,7 @@ ShallowWrapper {
                             color="inherit"
                             onClick={undefined}
               >
-                            Log out
+                            Sign Out
               </WithStyles(Button)>
 </WithStyles(Toolbar)>,
             "title": "Travels",
@@ -214,7 +214,7 @@ ShallowWrapper {
                   color="inherit"
                   onClick={undefined}
 >
-                  Log out
+                  Sign Out
 </WithStyles(Button)>,
               ],
             },
@@ -239,12 +239,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Log out",
+                  "children": "Sign Out",
                   "color": "inherit",
                   "onClick": undefined,
                 },
                 "ref": null,
-                "rendered": "Log out",
+                "rendered": "Sign Out",
                 "type": [Function],
               },
             ],

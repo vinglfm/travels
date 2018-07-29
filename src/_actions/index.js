@@ -2,14 +2,13 @@ import userService from '../_services/userService'
 
 const signIn = data => {
     return dispatch => {
-        userService.signIn(data.email, data.password)
+        return userService.signIn(data.email, data.password)
         .then(user => {
-            dispatch({
+            return dispatch({
                 type: 'SIGN_IN',
                 user
             });
         }).catch(error => {
-            //TODO: maybe log out on false attempt
             console.log(error);
         });
     };    
@@ -17,14 +16,13 @@ const signIn = data => {
 
 const signUp = data => {
     return dispatch => {
-        userService.signUp(data.email, data.password, data.firstName, data.lastName)
+        return userService.signUp(data.email, data.password, data.firstName, data.lastName)
         .then(user => {
-            dispatch({
+            return dispatch({
                 type: 'SIGN_UP',
                 user
             });
         }).catch(error => {
-            //TODO: maybe log out on false attempt
             console.log(error);
         });
     };    
@@ -40,7 +38,6 @@ const fbSignIn = (data, callback) => {
             });
         }).then(callback)
         .catch(error => {
-            //TODO: maybe log out on false attempt
             console.log(error);
         });
     };
