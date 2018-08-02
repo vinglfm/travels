@@ -17,7 +17,7 @@ const mockResponse = (status, statusText, response) => {
 
 describe('Authentication actions', () => {
   
-    it('signIn', () => {
+    it('signIn on valid response', () => {
         const user = {email: 'email', password: 'password'};
         window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve(mockResponse(200, null, '{"email": "email", "password": "password"}')));
@@ -28,8 +28,34 @@ describe('Authentication actions', () => {
             const expectedActions = store.getActions();
             expect(expectedActions.length).toBe(1);
             expect(expectedActions).toContainEqual({type: 'SIGN_IN', user});
-        });
+        });      
+    });
+
+    it('signIn on failed response', () => {
+      const user = {email: 'email', password: 'password'};
+      window.fetch = jest.fn().mockImplementation(() =>
+      Promise.reject(mockResponse(401, null, '{"error": "Not authorized"}')));
         
+      const store = mockStore({});
+
+      store.dispatch(actions.signIn(user)).then(() => {
+        const error =           {
+          _bodyInit: "{\"error\": \"Not authorized\"}",
+          _bodyText: "{\"error\": \"Not authorized\"}",
+          headers: {"map": {"content-type": "application/json"}},
+          ok: false, 
+          status: 401, 
+          statusText: null, 
+          type: "default",
+          url: ""
+        };
+          const expectedActions = store.getActions();
+          expect(expectedActions.length).toBe(1);
+          expect(expectedActions).toContainEqual({
+            type: 'AUTH_ERROR', 
+            error
+          });
+        });
     });
   });
   

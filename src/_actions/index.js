@@ -9,7 +9,10 @@ const signIn = data => {
                 user
             });
         }).catch(error => {
-            console.log(error);
+            return dispatch({
+                type: 'AUTH_ERROR',
+                error
+            });
         });
     };    
 };
