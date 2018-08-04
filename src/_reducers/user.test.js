@@ -1,5 +1,5 @@
 describe('User reducer', () => {
 
-    it('user', () => {
-    });
+  it('user', () => {
+  });
 });
