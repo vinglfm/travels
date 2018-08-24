@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Validaton from '../../_common/Validation';
+import FormHeader from '../FormHeader';
 import TextInput from '../TextInput';
 import actions from '../../_actions';
 import { connect } from 'react-redux';
@@ -35,11 +36,7 @@ export class SignIn extends Component {
     const passwordValidation = {error: !this.validation.validatePassword(this.state.password), message: 'Password should be between 5 and 12 characters'};
     return (
       <div>
-        <div className={styles.modal__header}>
-          <a onClick={this.props.onBack} className={styles.modal__back}><i className='fas fa-arrow-left'></i></a>
-          <span>Sign In</span>
-        </div>
-        <hr className={styles.modal__divider} />
+        <FormHeader title='Sign In' onBack={this.props.onBack}/>
         <form className={styles.modal__form} name='SignInForm' onSubmit={this.signIn} noValidate>
           <TextInput label='Email' type='email' name='email'
             required='true' error={emailValidation.error} errorMessage={emailValidation.message}
