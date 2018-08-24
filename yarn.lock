@@ -2987,10 +2987,6 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-fastest-validator@^0.6.7:
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/fastest-validator/-/fastest-validator-0.6.7.tgz#e9e896074f68e965b617d2c768bb9cd3716c65e3"
-
 fastparse@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.1.tgz#d1e2643b38a94d7583b479060e6c4affc94071f8"

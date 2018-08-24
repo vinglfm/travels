@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -6,8 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import Auth from './Auth.js';
 import styles from './AuthModal.css';
 
-
-export default class AuthModal extends Component {
+export default class AuthModal extends PureComponent {
   render() {
     return (
       <Dialog

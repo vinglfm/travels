@@ -1,26 +1,11 @@
-import Validator from 'fastest-validator';
-
 export default class Validation {
-  constructor() {
-    this.validator = new Validator();
+  emailSchema = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
-    this.emailSchema = {
-      email: { type: 'email' }
-    };
-
-    this.passwordSchema = {
-      password: { type: 'string', min: 5, max: 12 }
-    };
-
-    this.validateEmail = this.validateEmail.bind(this);
-    this.validatePassword = this.validatePassword.bind(this);
+  validatePassword(password) {
+    return password.length > 5 && password.length < 12;
   }
 
-  validateEmail(state, schema = this.emailSchema) {
-    return this.validator.validate(state, schema);
-  }
-
-  validatePassword(state, schema = this.passwordSchema) {
-    return this.validator.validate(state, schema);
+  validateEmail(email) {
+    return this.emailSchema.test(email);
   }
 }
