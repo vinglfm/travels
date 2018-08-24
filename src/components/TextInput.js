@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styles from './Auth/AuthModal.css';
 
-export default class TextInput extends Component {
+export default class TextInput extends PureComponent {
   render() {
     return (
       <div>
