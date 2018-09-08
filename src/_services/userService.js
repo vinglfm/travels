@@ -63,6 +63,7 @@ function handleResponse(resp) {
         const error = (data && data.message) || resp.statusText;
         return Promise.reject(error);
       }
+      console.log(data);
       return data;
     });
 }
